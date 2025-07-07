@@ -2,7 +2,7 @@
 	import kpm from "$lib/assets/experience/kpm.png";
 	import mccss from "$lib/assets/experience/mccss.png";
 	import yorku from "$lib/assets/experience/yorku.png";
-	import WorkExperience from "./WorkExperience.svelte";
+	import WorkExperience from "$lib/components/experience/WorkExperience.svelte";
 </script>
 
 <section class="app-container-main">
