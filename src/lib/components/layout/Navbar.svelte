@@ -17,7 +17,7 @@
 					<a class="nav-link" href="/static">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">About Me</a>
+					<a class="nav-link" href="/about">About Me</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/experience">Work Experience</a>
