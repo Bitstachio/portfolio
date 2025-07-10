@@ -14,7 +14,7 @@
 		<div class="collapse navbar-collapse" id="navbarColor01">
 			<ul class="navbar-nav me-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="/static">Home</a>
+					<a class="nav-link" href="/">Home</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/about">About Me</a>
@@ -23,7 +23,7 @@
 					<a class="nav-link" href="/experience">Work Experience</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Projects</a>
+					<a class="nav-link" href="/projects">Projects</a>
 				</li>
 			</ul>
 		</div>
