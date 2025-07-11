@@ -30,12 +30,8 @@
 			<div class="col-12 col-sm-6 col-md-3">
 				<Project
 					title={"Solve Me!"}
-					description={[
-						"Description #1",
-						"Description #2",
-						"Description #3",
-					]}
-					MyTool={JavaScript}
+					description={["Description #1", "Description #2", "Description #3"]}
+					toolKeys={["javascript", "nodejs"]}
 				/>
 			</div>
 			<div class="col-12 col-sm-6 col-md-3">Item 2</div>

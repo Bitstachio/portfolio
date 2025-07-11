@@ -1,15 +1,18 @@
 <script lang="ts">
 	import type { Component } from "svelte";
-	// import Tool from "$lib/components/common/Tool/Tool.svelte";
+	import Tool from "$lib/components/common/Tool/Tool.svelte";
+	import type { TToolKey } from "$lib/components/common/Tool/tool.types";
+	import { tools } from "$lib/components/common/Tool/tool.constants";
 
 	interface Props {
 		title: string;
 		description: string[];
-		// tools: Tool[];
-		MyTool: Component;
+		toolKeys: TToolKey[];
 	};
 
-	let { title, description, /*tools*/ MyTool }: Props = $props();
+	let { title, description, toolKeys }: Props = $props();
+
+	const toolProps = toolKeys.map((key) => tools[key]);
 </script>
 <div class="card mb-3">
 	<h3 class="card-header">{title}</h3>
@@ -21,9 +24,8 @@
 		</ul>
 	</div>
 	<div class="card-footer">
-		<MyTool />
-		<!-- {#each tools as tool}
-			{tool}
-		{/each} -->
+		{#each toolProps as toolProp}
+			<Tool title={toolProp.name} imgSrc={toolProp.imgSrc} />
+		{/each}
     </div>
 </div>
