@@ -1,8 +1,10 @@
 <script lang="ts">
-	import { tools as toolMap } from "$lib/components/common/Tool/tool.constants";
+	import { tools } from "$lib/components/common/Tool/tool.constants";
 	import Tool from "$lib/components/common/Tool/Tool.svelte";
 	import type { TToolKey } from "$lib/components/common/Tool/tool.types";
 	import Project from "./Project.svelte";
+
+	const getTools = (keys: TToolKey[]) => keys.map((key) => tools[key]);
 </script>
 
 <section>
@@ -21,8 +23,8 @@
 		</ul>
 		<section>
 			<!-- Skills container -->
-			<Tool title="JavaScript" imgSrc="" backgroundColor="yellow" />
-			<Tool title="Node.js" imgSrc="" backgroundColor="yellow" />
+			<Tool name="JavaScript" imgSrc="" backgroundColor="yellow" />
+			<Tool name="Node.js" imgSrc="" backgroundColor="yellow" />
 		</section>
 	</article>
 
@@ -30,12 +32,18 @@
 		<div class="row">
 			<div class="col-12 col-sm-6 col-md-3">
 				<Project
-					title={"Solve Me!"}
+					title={"Mad Grid"}
 					description={["Description #1", "Description #2", "Description #3"]}
-					tools={(["javascript", "nodejs"] satisfies TToolKey[]).map((key) => toolMap[key])}
+					tools={getTools(["java", "androidStudio", "spring", "firebase", "gcp"])}
 				/>
 			</div>
-			<div class="col-12 col-sm-6 col-md-3">Item 2</div>
+			<div class="col-12 col-sm-6 col-md-3">
+				<Project
+					title={"Solve Me!"}
+					description={["Description #1", "Description #2", "Description #3"]}
+					tools={getTools(["javascript", "nodeJS"])}
+				/>
+			</div>
 			<div class="col-12 col-sm-6 col-md-3">Item 3</div>
 			<div class="col-12 col-sm-6 col-md-3">Item 4</div>
 			<div class="col-12 col-sm-6 col-md-3">Item 5</div>

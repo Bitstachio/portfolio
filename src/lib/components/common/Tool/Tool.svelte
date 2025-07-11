@@ -1,12 +1,12 @@
 <script lang="ts">
 	interface Props {
-		title: string;
+		name: string;
 		imgSrc: string;
 		backgroundColor?: string;
 		textColor?: string;
 	}
 
-	let { title, imgSrc, backgroundColor, textColor }: Props = $props();
+	let { name, imgSrc, backgroundColor, textColor }: Props = $props();
 </script>
 
 <span
@@ -14,7 +14,7 @@
 	style="background-color: {backgroundColor ?? 'var(--bs-primary)'}; color: {textColor ?? 'white'}"
 >
 	<div class="d-flex gap-1">
-		<img src={imgSrc} alt="{title} icon" />
-		<p>{title}</p>
+		<img src={imgSrc} alt="" />
+		<p>{name}</p>
 	</div>
 </span>
