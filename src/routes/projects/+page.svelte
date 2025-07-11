@@ -1,5 +1,6 @@
 <script>
-	import Tool from "$lib/components/common/Tool.svelte";
+	import Tool from "$lib/components/common/Tool/Tool.svelte";
+	import JavaScript from "$lib/components/common/Tool/tools/JavaScript.svelte";
 	import Project from "./Project.svelte";
 </script>
 
@@ -27,7 +28,15 @@
 	<section class="container">
 		<div class="row">
 			<div class="col-12 col-sm-6 col-md-3">
-				<Project />
+				<Project
+					title={"Solve Me!"}
+					description={[
+						"Description #1",
+						"Description #2",
+						"Description #3",
+					]}
+					MyTool={JavaScript}
+				/>
 			</div>
 			<div class="col-12 col-sm-6 col-md-3">Item 2</div>
 			<div class="col-12 col-sm-6 col-md-3">Item 3</div>
