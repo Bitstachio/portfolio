@@ -15,8 +15,8 @@
 	class="badge rounded-pill"
 	style="background-color: {backgroundColor ?? 'var(--bs-primary)'}; color: {textColor ?? 'white'}"
 >
-	<div class="d-flex gap-1">
+	<div class="d-flex align-items-center gap-1">
 		<img src={imgSrc} alt="" height={toolIconHeight} />
-		<p>{name}</p>
+		<p class="mb-0">{name}</p>
 	</div>
 </span>
