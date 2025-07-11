@@ -21,7 +21,7 @@
 	</div>
 	<div class="card-footer">
 		{#each tools as tool}
-			<Tool title={tool.name} imgSrc={tool.imgSrc} />
+			<Tool name={tool.name} imgSrc={tool.imgSrc} />
 		{/each}
     </div>
 </div>
