@@ -1,6 +1,7 @@
-<script>
+<script lang="ts">
+	import { tools as toolMap } from "$lib/components/common/Tool/tool.constants";
 	import Tool from "$lib/components/common/Tool/Tool.svelte";
-	import JavaScript from "$lib/components/common/Tool/tools/JavaScript.svelte";
+	import type { TToolKey } from "$lib/components/common/Tool/tool.types";
 	import Project from "./Project.svelte";
 </script>
 
@@ -31,7 +32,7 @@
 				<Project
 					title={"Solve Me!"}
 					description={["Description #1", "Description #2", "Description #3"]}
-					toolKeys={["javascript", "nodejs"]}
+					tools={(["javascript", "nodejs"] satisfies TToolKey[]).map((key) => toolMap[key])}
 				/>
 			</div>
 			<div class="col-12 col-sm-6 col-md-3">Item 2</div>
