@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { toolIconHeight } from "./tool.constants";
+
 	interface Props {
 		name: string;
 		imgSrc: string;
@@ -14,7 +16,7 @@
 	style="background-color: {backgroundColor ?? 'var(--bs-primary)'}; color: {textColor ?? 'white'}"
 >
 	<div class="d-flex gap-1">
-		<img src={imgSrc} alt="" />
+		<img src={imgSrc} alt="" height={toolIconHeight} />
 		<p>{name}</p>
 	</div>
 </span>
