@@ -6,12 +6,13 @@
 		title: string;
 		description: string[];
 		tools: IToolProps[];
-	};
+	}
 
 	let { title, description, tools }: Props = $props();
 </script>
+
 <div class="card mb-3">
-	<h3 class="card-header">{title}</h3>
+	<h3 class="card-header"><strong>{title}</strong></h3>
 	<div class="card-body pb-0">
 		<ul>
 			{#each description as bulletPoint}
@@ -23,5 +24,5 @@
 		{#each tools as tool}
 			<Tool name={tool.name} imgSrc={tool.imgSrc} />
 		{/each}
-    </div>
+	</div>
 </div>
