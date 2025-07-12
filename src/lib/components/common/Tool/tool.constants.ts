@@ -39,6 +39,10 @@ export const tools = {
         name: "Unity",
         imgSrc: "src/lib/assets/dev-icons/unity-original.svg",
     },
+    cpp: {
+        name: "C++",
+        imgSrc: "src/lib/assets/dev-icons/cplusplus-original.svg",
+    },
     arduino: {
         name: "Arduino",
         imgSrc: "src/lib/assets/dev-icons/arduino-original.svg",
