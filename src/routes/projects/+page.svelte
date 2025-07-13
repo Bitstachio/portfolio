@@ -32,7 +32,6 @@
 					title="Deep Seeker"
 					description={["Description #1", "Description #2", "Description #3"]}
 					tools={getTools(["csharp", "unity"])}
-
 				/>
 			</div>
 			<div class="col-12 col-md-6">

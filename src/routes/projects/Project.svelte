@@ -16,18 +16,18 @@
 	<div class="card-header d-flex justify-content-between">
 		<h3><strong>{title}</strong></h3>
 		<div class="d-flex align-items-center gap-3">
-            {#if linkGitHub}
-                <a href={linkGitHub} target="_blank">
-                    <img src="src/lib/assets/dev-icons/github-original.svg" alt="GitHub icon" height="28" />
-                </a>
-            {/if}
-        </div>
-    </div>
-    <div class="card-body pb-0">
-        <ul>
-            {#each description as bulletPoint}
-                <li>{bulletPoint}</li>
-            {/each}
+			{#if linkGitHub}
+				<a href={linkGitHub} target="_blank">
+					<img src="src/lib/assets/dev-icons/github-original.svg" alt="GitHub icon" height="28" />
+				</a>
+			{/if}
+		</div>
+	</div>
+	<div class="card-body pb-0">
+		<ul>
+			{#each description as bulletPoint}
+				<li>{bulletPoint}</li>
+			{/each}
 		</ul>
 	</div>
 	<div class="card-footer">
