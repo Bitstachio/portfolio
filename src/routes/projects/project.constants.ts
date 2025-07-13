@@ -19,8 +19,12 @@ export const projectLinkTypes = {
 export const projectConfigs: IProjectProps[] = [
 	{
 		title: "Mad Grid",
-		description: ["Description #1", "Description #2", "Description #3"],
+		description: [
+			"Created and published a sequence memory game on Google Play using Java and Android Studio",
+			"Developed and deployed an API on Google Cloud Platform using Java, Spring Boot, Firebase, and WebSockets enabling two-way client-server communication for real-time gaming and matchmaking",
+		],
 		tools: getTools(["java", "androidStudio", "spring", "firebase", "gcp"]),
+		srcImg: "project/mad-grid.png",
 		links: [
 			{
 				type: "github",
@@ -30,8 +34,12 @@ export const projectConfigs: IProjectProps[] = [
 	},
 	{
 		title: "Solve Me!",
-		description: ["Description #1", "Description #2", "Description #3"],
+		description: [
+			"Created a web application implementing and visualizing pathfinding algorithms: breadth-first search (BFS), depth-first search (DFS), and recursive backtracking",
+			"Utilized asynchronous JavaScript functions in conjunction with the MutationObserver API to handle smooth maze animations, in addition to generating an algorithm performance chart using the D3.js data visualization library",
+		],
 		tools: getTools(["javascript", "nodeJS"]),
+		srcImg: "project/solve-me.png",
 		links: [
 			{
 				type: "github",
@@ -41,8 +49,13 @@ export const projectConfigs: IProjectProps[] = [
 	},
 	{
 		title: "Ampere",
-		description: ["Description #1", "Description #2", "Description #3"],
+		description: [
+			"Built a self-driving bot for robot-sumo competitions from the ground up, showcasing proficiency with Arduino and C++",
+			"Incorporated an ultrasonic (distance) and two reflectance sensors, enabling precise obstacle detection and navigation",
+			"Designed the chassis using Tinkercad (CAD software) and manufactured it using 3D printing",
+		],
 		tools: getTools(["arduino", "cpp"]),
+		srcImg: "project/ampere.png",
 		links: [
 			{
 				type: "github",
@@ -52,8 +65,13 @@ export const projectConfigs: IProjectProps[] = [
 	},
 	{
 		title: "Deep Seeker",
-		description: ["Description #1", "Description #2", "Description #3"],
+		description: [
+			"Collaborated in a team of 5 to develop a 2D platformer using C# and Unity",
+			"Created custom animations and implemented fight mechanics, lighting, and physics-based movement",
+			"Leveraged Unity’s animation system and physics engine for smooth and responsive player controls",
+		],
 		tools: getTools(["csharp", "unity"]),
+		srcImg: "project/deepseeker.png",
 		links: [
 			{
 				type: "itch",
