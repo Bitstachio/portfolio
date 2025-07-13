@@ -30,7 +30,7 @@
 			</p>
 		</div>
 		<div>
-			<img src={chess} alt="Playing chess" height="350rem">
+			<img src={chess} alt="Playing chess" height="350rem" />
 			<p>
 				Fun fact! I have been playing chess since I was five years old. It is my favourite board game as it does not
 				involve dice or card dealing. There's virtually no element of luck, and every loss is a direct result of my own

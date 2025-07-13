@@ -18,7 +18,7 @@
 			title="Full-stack Developer Intern"
 			description={[
 				"Built and tested features using React, Node.js, Vitest, and Jest to enhance performance and maintainability of the system.",
-				"Developed a dynamic tree view for assemblies in KPM's inventory management software, enabling partial refreshes and reducing inventory loading time by 90%."
+				"Developed a dynamic tree view for assemblies in KPM's inventory management software, enabling partial refreshes and reducing inventory loading time by 90%.",
 			]}
 		/>
 		<WorkExperience
