@@ -18,4 +18,5 @@ export interface IProjectProps {
 	description: string[];
 	tools: IToolProps[];
 	links?: IProjectLink[];
+	srcImg?: string;
 }

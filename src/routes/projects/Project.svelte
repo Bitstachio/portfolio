@@ -3,7 +3,7 @@
 	import type { IProjectProps } from "./project.types";
 	import { projectLinkTypes } from "./project.constants";
 
-	let { title, description, tools, links }: IProjectProps = $props();
+	let { title, description, tools, srcImg, links }: IProjectProps = $props();
 </script>
 
 <div class="card mb-3">
@@ -19,6 +19,9 @@
 			{/if}
 		</div>
 	</div>
+	{#if srcImg}
+		<img src={srcImg} alt="{title} image" />
+	{/if}
 	<div class="card-body pb-0">
 		<ul>
 			{#each description as bulletPoint, index (`${title}-description-${index}`)}
