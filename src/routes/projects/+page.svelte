@@ -13,30 +13,34 @@
 		<div class="row">
 			<div class="col-12 col-md-6">
 				<Project
-					title={"Mad Grid"}
+					title="Mad Grid"
 					description={["Description #1", "Description #2", "Description #3"]}
 					tools={getTools(["java", "androidStudio", "spring", "firebase", "gcp"])}
+					linkGitHub="https://github.com/Bitstachio/mad-grid"
 				/>
 			</div>
 			<div class="col-12 col-md-6">
 				<Project
-					title={"Solve Me!"}
+					title="Solve Me!"
 					description={["Description #1", "Description #2", "Description #3"]}
 					tools={getTools(["javascript", "nodeJS"])}
+					linkGitHub="https://github.com/Bitstachio/solve-me"
 				/>
 			</div>
 			<div class="col-12 col-md-6">
 				<Project
-					title={"Deep Seeker"}
+					title="Deep Seeker"
 					description={["Description #1", "Description #2", "Description #3"]}
 					tools={getTools(["csharp", "unity"])}
+
 				/>
 			</div>
 			<div class="col-12 col-md-6">
 				<Project
-					title={"Ampere"}
+					title="Ampere"
 					description={["Description #1", "Description #2", "Description #3"]}
 					tools={getTools(["arduino", "cpp"])}
+					linkGitHub="https://github.com/Bitstachio/ampere"
 				/>
 			</div>
 		</div>
