@@ -1,18 +1,21 @@
 <script lang="ts">
 	import Tool from "$lib/components/common/Tool/Tool.svelte";
 	import type { IProjectProps } from "./project.types";
+	import {projectLinkTypes} from "./project.constants";
 
-	let { title, description, tools, linkGitHub }: IProjectProps = $props();
+	let { title, description, tools, links }: IProjectProps = $props();
 </script>
 
 <div class="card mb-3">
 	<div class="card-header d-flex justify-content-between">
 		<h3><strong>{title}</strong></h3>
 		<div class="d-flex align-items-center gap-3">
-			{#if linkGitHub}
-				<a href={linkGitHub} target="_blank">
-					<img src="src/lib/assets/dev-icons/github-original.svg" alt="GitHub icon" height="28" />
+			{#if links}
+			{#each links as link (link.address)}
+				<a href={link.address} target="_blank">
+					<img src={projectLinkTypes[link.type].srcIcon} alt="{link.type} icon" height="28" />
 				</a>
+				{/each}
 			{/if}
 		</div>
 	</div>
