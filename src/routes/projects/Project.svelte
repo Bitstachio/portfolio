@@ -1,15 +1,8 @@
 <script lang="ts">
 	import Tool from "$lib/components/common/Tool/Tool.svelte";
-	import type { IToolProps } from "$lib/components/common/Tool/tool.types";
+	import type { IProjectProps } from "./project.types";
 
-	interface Props {
-		title: string;
-		description: string[];
-		tools: IToolProps[];
-		linkGitHub?: string;
-	}
-
-	let { title, description, tools, linkGitHub }: Props = $props();
+	let { title, description, tools, linkGitHub }: IProjectProps = $props();
 </script>
 
 <div class="card mb-3">
