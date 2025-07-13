@@ -1,5 +1,5 @@
-import type {IProjectLinkProps, IProjectProps} from "./project.types";
-import {getTools} from "./project.utils";
+import type { IProjectLinkProps, IProjectProps } from "./project.types";
+import { getTools } from "./project.utils";
 
 export const projectLinkTypes = {
 	demo: {
@@ -12,7 +12,7 @@ export const projectLinkTypes = {
 		srcIcon: "",
 	},
 	itch: {
-		srcIcon: "",
+		srcIcon: "src/lib/assets/dev-icons/itch.svg",
 	},
 } satisfies Record<string, IProjectLinkProps>;
 
@@ -54,5 +54,15 @@ export const projectConfigs: IProjectProps[] = [
 		title: "Deep Seeker",
 		description: ["Description #1", "Description #2", "Description #3"],
 		tools: getTools(["csharp", "unity"]),
+		links: [
+			{
+				type: "itch",
+				address: "https://nessyu.itch.io/deepseeker",
+			},
+			{
+				type: "github",
+				address: "https://github.com/Bitstachio/deepseeker",
+			},
+		],
 	},
 ];
