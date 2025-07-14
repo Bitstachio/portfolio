@@ -1,3 +1,3 @@
 import type { MONTHS } from "$lib/constants";
 
-export type TMonth = typeof MONTHS[number]["name"];
+export type TMonth = (typeof MONTHS)[number]["name"];
