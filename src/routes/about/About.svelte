@@ -1,12 +1,7 @@
 <script lang="ts">
-	interface Props {
-		title: string;
-		passage: string;
-		imgSrc: string;
-		imgAlt?: string;
-	}
+	import type { IAboutArticle } from "./about.types";
 
-	let { title, passage, imgSrc, imgAlt }: Props = $props();
+	let { title, passage, imgSrc, imgAlt }: IAboutArticle = $props();
 </script>
 
 <article
