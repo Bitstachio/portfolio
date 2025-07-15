@@ -1,24 +1,15 @@
 <script lang="ts">
 	import chess from "$lib/assets/about/chess.jpg";
+	import About from "./About.svelte";
 </script>
 
 <section class="app-container-main">
 	<h1>About Me</h1>
-	<article class="d-flex justify-content-center align-items-center w-75 mx-auto border border-primary border-2 rounded shadow-lg">
-		<div class="p-5">
-			<h3>Why Computer Science?</h3>
-			<br>
-			<p>
-				Given my inquisitive nature and sense of creativity, I chose to study Computer Science. I believe that this
-				field provides me with the means not only to better understand the technologies I constantly interact with but
-				also to express my ideas as practical applications, addressing real-world challenges.
-			</p>
-		</div>
-		<div class="p-3 bg-primary">
-			<img src="about/think.jpg" alt="Thinking" height="300" class="rounded" />
-		</div>
-	</article>
-
+	<About
+		title="Why Computer Science?"
+		passage="Given my inquisitive nature and sense of creativity, I chose to study Computer Science. I believe that this field provides me with the means not only to better understand the technologies I constantly interact with but also to express my ideas as practical applications, addressing real-world challenges."
+		imgSrc="about/think.jpg"
+	/>
 
 	<article class="w-75 mx-auto d-flex gap-4">
 		<div>
