@@ -3,4 +3,5 @@ export interface IAboutArticle {
 	passage: string;
 	imgSrc: string;
 	imgAlt?: string;
+	flip?: boolean;
 }

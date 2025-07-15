@@ -1,11 +1,11 @@
 <script lang="ts">
 	import type { IAboutArticle } from "./about.types";
 
-	let { title, passage, imgSrc, imgAlt }: IAboutArticle = $props();
+	let { title, passage, imgSrc, imgAlt, flip }: IAboutArticle = $props();
 </script>
 
 <article
-	class="d-flex justify-content-center align-items-center w-75 mx-auto border border-primary border-2 rounded shadow-lg mb-3"
+	class={`${flip && "flex-row-reverse"} d-flex justify-content-center align-items-center w-75 mx-auto border border-primary border-2 rounded shadow-lg mb-3`}
 >
 	<div class="p-5">
 		<h3>{title}</h3>
