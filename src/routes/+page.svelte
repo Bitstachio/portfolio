@@ -5,7 +5,7 @@
 <section class="banner d-flex flex-column justify-content-center text-center">
 	<div class="bg-white bg-opacity-75 p-4 rounded shadow w-75 mx-auto">
 		<h1>Hey, I'm Barbod 👋</h1>
-		<br>
+		<br />
 		<p>
 			I'm a 4th-year <strong>Computer Science</strong> student at York University, interested in
 			<strong>full-stack development</strong>
