@@ -1,15 +1,14 @@
 <script lang="ts">
 	import chess from "$lib/assets/about/chess.jpg";
+	import { aboutArticles } from "./about.constants";
 	import About from "./About.svelte";
 </script>
 
 <section class="app-container-main">
 	<h1>About Me</h1>
-	<About
-		title="Why Computer Science?"
-		passage="Given my inquisitive nature and sense of creativity, I chose to study Computer Science. I believe that this field provides me with the means not only to better understand the technologies I constantly interact with but also to express my ideas as practical applications, addressing real-world challenges."
-		imgSrc="about/think.jpg"
-	/>
+	{#each aboutArticles as article}
+		<About title={article.title} passage={article.passage} imgSrc={article.imgSrc} imgAlt={article.imgAlt} />
+	{/each}
 
 	<article class="w-75 mx-auto d-flex gap-4">
 		<div>
