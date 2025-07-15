@@ -9,3 +9,8 @@
 		text-align: center;
 	}
 }
+
+// Bootstrap does not provide a utility class for justified text
+.app-text-justify {
+	text-align: justify;
+}

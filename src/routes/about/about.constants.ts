@@ -4,7 +4,7 @@ export const aboutArticles: IAboutArticle[] = [
 	{
 		title: "Intro",
 		passage:
-			"I am an inherently curious individual finding great pleasure in understanding the world around me, which has fueled my ambition to pursue a career in research and development (R&D). I’m particularly interested in simulation engineering and the development of physics engines. As the world increasingly moves toward robotics and automation, I believe there is tremendous value in the ability to simulate designs accurately and save millions of dollars in operational costs.",
+			"I'm an inherently curious individual finding great pleasure in understanding the world around me. I'm particularly interested in simulation engineering and the development of physics engines. As the world increasingly moves toward robotics and automation, I believe there is tremendous value in the ability to simulate designs accurately and save millions of dollars in operational costs.",
 		imgSrc: "about/board.jpg",
 	},
 	{
@@ -20,7 +20,7 @@ export const aboutArticles: IAboutArticle[] = [
 		imgSrc: "about/think.jpg",
 	},
 	{
-		title: "Fun Fact",
+		title: "Fun Fact!",
 		passage:
 			"Fun fact! I have been playing chess since I was five years old. It is my favorite board game as it does not involve dice or card dealing. There's virtually no element of luck, and every loss is a direct result of my own decisions.",
 		imgSrc: "about/chess.jpg",
