@@ -23,7 +23,7 @@
 
 <style>
 	.banner {
-		background-image: url("static/page/home.jpg");
+		background-image: url("page/home.jpg");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;

@@ -1,8 +1,7 @@
 import type { tools } from "./tool.constants";
+import type { INamedIcon } from "$lib/types";
 
-export interface IToolProps {
-	name: string;
-	imgSrc: string;
+export interface IToolProps extends INamedIcon {
 	backgroundColor?: string;
 	textColor?: string;
 }
