@@ -2,7 +2,7 @@
 	import logo from "$lib/assets/logo.png";
 </script>
 
-<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg bg-primary sticky-top" data-bs-theme="dark">
 	<div class="container-fluid">
 		<div class="d-flex align-items-center gap-2">
 			<img src={logo} alt="Logo" height="25rem" />
