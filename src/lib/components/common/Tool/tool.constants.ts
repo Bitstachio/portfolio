@@ -2,50 +2,50 @@ import type { IToolProps } from "./tool.types";
 
 export const tools = {
 	javascript: {
-		iconSrc: "src/lib/assets/dev-icons/javascript-original.svg",
+		iconSrc: "dev-icons/languages/javascript.svg",
 		backgroundColor: "yellow",
 		name: "JavaScript",
 	},
 	nodeJS: {
 		name: "Node.js",
-		iconSrc: "src/lib/assets/dev-icons/nodejs-original.svg",
+		iconSrc: "dev-icons/frameworks/nodejs.svg",
 		backgroundColor: "yellow",
 	},
 	java: {
 		name: "Java",
-		iconSrc: "src/lib/assets/dev-icons/java-original.svg",
+		iconSrc: "dev-icons/languages/java.svg",
 	},
 	spring: {
 		name: "Spring Boot",
-		iconSrc: "src/lib/assets/dev-icons/spring-original.svg",
+		iconSrc: "dev-icons/frameworks/spring.svg",
 	},
 	androidStudio: {
 		name: "Android Studio",
-		iconSrc: "src/lib/assets/dev-icons/androidstudio-original.svg",
+		iconSrc: "dev-icons/tools/android-studio.svg",
 	},
 	gcp: {
 		name: "Google Cloud Platform",
-		iconSrc: "src/lib/assets/dev-icons/googlecloud-original.svg",
+		iconSrc: "dev-icons/tools/gcp.svg",
 	},
 	firebase: {
 		name: "Firebase",
-		iconSrc: "src/lib/assets/dev-icons/firebase-original.svg",
+		iconSrc: "dev-icons/tools/firebase.svg",
 	},
 	csharp: {
 		name: "C#",
-		iconSrc: "src/lib/assets/dev-icons/csharp-original.svg",
+		iconSrc: "dev-icons/languages/csharp.svg",
 	},
 	unity: {
 		name: "Unity",
-		iconSrc: "src/lib/assets/dev-icons/unity-original.svg",
+		iconSrc: "dev-icons/frameworks/unity.svg",
 	},
 	cpp: {
 		name: "C++",
-		iconSrc: "src/lib/assets/dev-icons/cplusplus-original.svg",
+		iconSrc: "dev-icons/languages/cpp.svg",
 	},
 	arduino: {
 		name: "Arduino",
-		iconSrc: "src/lib/assets/dev-icons/arduino-original.svg",
+		iconSrc: "dev-icons/frameworks/arduino.svg",
 	},
 } satisfies Record<string, IToolProps>;
 
