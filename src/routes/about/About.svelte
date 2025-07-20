@@ -4,7 +4,7 @@
 	let { title, passage, imgSrc, imgAlt, flip }: IAboutArticle = $props();
 </script>
 
-<article class="container shadow-lg rounded my-4 p-3 bg-white bsx-bg-opacity-90">
+<article class="app-bg-white">
 	<div class={`row align-items-center g-4 ${flip ? 'flex-row-reverse' : ''}`}>
 		<div class="col-md-6">
 			<img src={imgSrc} alt={imgAlt ?? title} class="img-fluid rounded shadow-sm" />
