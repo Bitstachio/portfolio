@@ -3,11 +3,12 @@
 	import mccss from "$lib/assets/experience/mccss.png";
 	import yorku from "$lib/assets/experience/yorku.png";
 	import WorkExperience from "$lib/components/experience/WorkExperience.svelte";
+	import SectionTitle from "$lib/components/layout/SectionTitle.svelte";
 </script>
 
 <section class="app-container-main">
-	<h1>Work Experience</h1>
-	<section class="w-75 mx-auto d-flex flex-column gap-3">
+	<SectionTitle text="Work Experience" />
+	<section class="w-75 mx-auto d-flex flex-column gap-3 border-start border-3 ps-3">
 		<WorkExperience
 			logo={kpm}
 			company="KPM Power Inc."
@@ -78,4 +79,5 @@
 			]}
 		/>
 	</section>
+	<br>
 </section>

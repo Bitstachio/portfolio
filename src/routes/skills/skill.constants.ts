@@ -15,10 +15,6 @@ export const programmingLanguages: INamedIcon[] = [
 		iconSrc: pathLanguages + "java.svg",
 	},
 	{
-		name: "C#",
-		iconSrc: pathLanguages + "csharp.svg",
-	},
-	{
 		name: "Python",
 		iconSrc: pathLanguages + "python.svg",
 	},
@@ -27,17 +23,25 @@ export const programmingLanguages: INamedIcon[] = [
 		iconSrc: pathLanguages + "javascript.svg",
 	},
 	{
+		name: "Typescript",
+		iconSrc: pathLanguages + "typescript.svg",
+	},
+	{
+		name: "C#",
+		iconSrc: pathLanguages + "csharp.svg",
+	},
+	{
 		name: "C",
 		iconSrc: pathLanguages + "c.svg",
 	},
-	{
-		name: "HTML",
-		iconSrc: pathLanguages + "html.svg",
-	},
-	{
-		name: "CSS",
-		iconSrc: pathLanguages + "css.svg",
-	},
+	// {
+	// 	name: "HTML",
+	// 	iconSrc: pathLanguages + "html.svg",
+	// },
+	// {
+	// 	name: "CSS",
+	// 	iconSrc: pathLanguages + "css.svg",
+	// },
 ];
 
 export const frameworks: INamedIcon[] = [
@@ -50,8 +54,16 @@ export const frameworks: INamedIcon[] = [
 		iconSrc: pathFrameworks + "dotnetcore.svg",
 	},
 	{
-		name: "JUnit",
-		iconSrc: pathFrameworks + "junit.svg",
+		name: "React",
+		iconSrc: pathFrameworks + "react.svg",
+	},
+	{
+		name: "Node.js",
+		iconSrc: pathFrameworks + "nodejs.svg",
+	},
+	{
+		name: "Express",
+		iconSrc: pathFrameworks + "express.svg",
 	},
 	{
 		name: "Selenium",
@@ -66,22 +78,6 @@ export const frameworks: INamedIcon[] = [
 		iconSrc: pathFrameworks + "unity.svg",
 	},
 	{
-		name: "Unit",
-		iconSrc: pathFrameworks + "unity.svg",
-	},
-	{
-		name: "Node.js",
-		iconSrc: pathFrameworks + "nodejs.svg",
-	},
-	{
-		name: "Express",
-		iconSrc: pathFrameworks + "express.svg",
-	},
-	{
-		name: "React",
-		iconSrc: pathFrameworks + "react.svg",
-	},
-	{
 		name: "Svelte",
 		iconSrc: pathFrameworks + "svelte.svg",
 	},
@@ -91,6 +87,26 @@ export const tools: INamedIcon[] = [
 	{
 		name: "Git",
 		iconSrc: pathTools + "git.svg",
+	},
+	{
+		name: "Postman",
+		iconSrc: pathTools + "postman.svg",
+	},
+	{
+		name: "Docker",
+		iconSrc: pathTools + "docker.svg",
+	},
+	{
+		name: "Maven",
+		iconSrc: pathTools + "maven.svg",
+	},
+	{
+		name: "Vite",
+		iconSrc: pathTools + "vite.svg",
+	},
+	{
+		name: "Webpack",
+		iconSrc: pathTools + "webpack.svg",
 	},
 	{
 		name: "Jenkins",
@@ -105,35 +121,15 @@ export const tools: INamedIcon[] = [
 		iconSrc: pathTools + "firebase.svg",
 	},
 	{
-		name: "Docker",
-		iconSrc: pathTools + "docker.svg",
-	},
-	{
 		name: "Google Cloud Platform",
 		iconSrc: pathTools + "gcp.svg",
 	},
-	{
-		name: "Postman",
-		iconSrc: pathTools + "postman.svg",
-	},
-	{
-		name: "MySQL",
-		iconSrc: pathTools + "mysql.svg",
-	},
+	// {
+	// 	name: "MySQL",
+	// 	iconSrc: pathTools + "mysql.svg",
+	// },
 	{
 		name: "Vercel",
 		iconSrc: pathTools + "vercel.svg",
-	},
-	{
-		name: "Webpack",
-		iconSrc: pathTools + "webpack.svg",
-	},
-	{
-		name: "Vite",
-		iconSrc: pathTools + "vite.svg",
-	},
-	{
-		name: "Maven",
-		iconSrc: pathTools + "maven.svg",
 	},
 ];
