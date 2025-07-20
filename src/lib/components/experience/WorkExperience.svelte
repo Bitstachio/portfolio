@@ -15,7 +15,7 @@
 	let { logo, company, startMonth, startYear, endMonth, endYear, title, description }: Props = $props();
 </script>
 
-<article class="d-flex gap-5">
+<article class="d-flex gap-5 app-bg-white">
 	<div class="d-flex flex-column align-items-center">
 		<img src={logo} alt={`${company} Logo`} height="160rem" class="mb-3" />
 		<p class="lh-1"><strong>{company}</strong></p>

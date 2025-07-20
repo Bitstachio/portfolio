@@ -2,11 +2,11 @@
 	import logo from "$lib/assets/logo.png";
 </script>
 
-<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg bg-primary sticky-top" data-bs-theme="dark">
 	<div class="container-fluid">
 		<div class="d-flex align-items-center gap-2">
 			<img src={logo} alt="Logo" height="25rem" />
-			<a class="navbar-brand" href="#">Barbod Habibi</a>
+			<h5 class="text-white mb-0 me-3"><strong>Barbod Habibi</strong></h5>
 		</div>
 		<button
 			class="navbar-toggler"
@@ -29,6 +29,9 @@
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/experience">Work Experience</a>
+				</li>
+				<li>
+					<a class="nav-link" href="/skills">Skills</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="/projects">Projects</a>
