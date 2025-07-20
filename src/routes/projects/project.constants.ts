@@ -6,13 +6,13 @@ export const projectLinkTypes = {
 		srcIcon: "",
 	},
 	github: {
-		srcIcon: "src/lib/assets/dev-icons/github-original.svg",
+		srcIcon: "dev-icons/websites/github.svg",
 	},
 	googlePlay: {
 		srcIcon: "",
 	},
 	itch: {
-		srcIcon: "src/lib/assets/dev-icons/itch.svg",
+		srcIcon: "dev-icons/websites/itch.svg",
 	},
 } satisfies Record<string, IProjectLinkProps>;
 
