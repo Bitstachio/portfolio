@@ -1,3 +1,7 @@
+<script>
+	import SocialLink from "$lib/components/SocialLink.svelte";
+</script>
+
 <svelte:head>
 	<title>Homepage</title>
 </svelte:head>
@@ -15,6 +19,11 @@
 			Currently, I'm working as a Software Engineer at
 			<a href="https://kpmpower.com" target="_blank" rel="noopener noreferrer">KPM Power</a>.
 		</p>
+		<br />
+		<div class="d-flex justify-content-center gap-3">
+			<SocialLink name="LinkedIn" link="https://www.linkedin.com/in/barbodhabibi/" imgSrc="social/linkedin.png" />
+			<SocialLink name="GitHub" link="https://github.com/Bitstachio" imgSrc="social/github.png" />
+		</div>
 	</div>
 </section>
 
