@@ -25,7 +25,7 @@ body {
 .app-bg-white {
 	@extend .container;
 	@extend .shadow-lg;
-	@extend .rounded;
+	@extend .rounded-4;
 	@extend .my-4;
 	@extend .p-3;
 	@extend .bg-white;
