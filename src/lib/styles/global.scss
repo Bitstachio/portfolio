@@ -1,3 +1,9 @@
+@import "bootstrap/scss/functions";
+@import "bootswatch/dist/flatly/variables";
+@import "bootstrap/scss/bootstrap";
+@import "bootswatch/dist/flatly/bootswatch";
+@import "./bootstrap-extension";
+
 body {
 	background-image: url("page/background.jpg");
 	background-size: cover;
@@ -14,6 +20,16 @@ body {
 	h1 {
 		text-align: center;
 	}
+}
+
+.app-bg-white {
+	@extend .container;
+	@extend .shadow-lg;
+	@extend .rounded;
+	@extend .my-4;
+	@extend .p-3;
+	@extend .bg-white;
+	@extend .bsx-bg-opacity-90;
 }
 
 // Bootstrap does not provide a utility class for justified text
