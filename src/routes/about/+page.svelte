@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { aboutArticles } from "./about.constants";
 	import About from "./About.svelte";
+	import SectionTitle from "$lib/components/layout/SectionTitle.svelte";
 </script>
 
 <section class="app-container-main">
-	<h1>About Me</h1>
+	<SectionTitle text="About Me" />
 	{#each aboutArticles as article, index (article.title)}
 		<About
 			title={article.title}
