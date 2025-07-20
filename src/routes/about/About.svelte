@@ -4,15 +4,24 @@
 	let { title, passage, imgSrc, imgAlt, flip }: IAboutArticle = $props();
 </script>
 
-<article
-	class={`${flip && "flex-row-reverse"} d-flex justify-content-center align-items-center w-75 mx-auto border border-primary border-2 rounded shadow-lg mb-3`}
->
-	<div class="p-5">
-		<h3>{title}</h3>
-		<br />
-		<p class="app-text-justify">{passage}</p>
-	</div>
-	<div class="p-3 bg-primary">
-		<img src={imgSrc} alt={imgAlt ?? title} height="300" />
+<article class="container shadow-lg rounded my-4 p-3">
+	<div class={`row align-items-center g-4 ${flip ? 'flex-row-reverse' : ''}`}>
+		<div class="col-md-6">
+			<img src={imgSrc} alt={imgAlt ?? title} class="img-fluid rounded shadow-sm" />
+		</div>
+		<div class="col-md-6">
+			<h3 class="mb-3">{title}</h3>
+			<p class="text-muted">{passage}</p>
+		</div>
 	</div>
 </article>
+
+<style>
+	img {
+		transition: transform 0.3s ease;
+	}
+
+	img:hover {
+		transform: scale(1.03);
+	}
+</style>
