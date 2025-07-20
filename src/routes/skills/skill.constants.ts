@@ -5,9 +5,7 @@ const pathLanguages = pathDevIcons + "languages/";
 const pathFrameworks = pathDevIcons + "frameworks/";
 const pathTools = pathDevIcons + "tools/";
 
-export const skills = [
-
-]
+export const skills = [];
 
 export const programmingLanguages: INamedIcon[] = [
 	{

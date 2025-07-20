@@ -79,5 +79,5 @@
 			]}
 		/>
 	</section>
-	<br>
+	<br />
 </section>
