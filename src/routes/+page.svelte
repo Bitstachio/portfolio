@@ -3,7 +3,7 @@
 </svelte:head>
 
 <section class="banner d-flex flex-column justify-content-center text-center">
-	<div class="bg-white bg-opacity-75 p-4 rounded shadow w-75 mx-auto">
+	<div class="bg-white bg-opacity-75 p-4 rounded-4 shadow w-75 mx-auto">
 		<h1>Hey, I'm Barbod 👋</h1>
 		<br />
 		<p>
@@ -12,18 +12,15 @@
 			and <strong>physics engine programming</strong>.
 		</p>
 		<p>
-			Currently, I'm working as a Software Engineer at <a
-				href="https://kpmpower.com"
-				target="_blank"
-				rel="noopener noreferrer">KPM Power</a
-			>
+			Currently, I'm working as a Software Engineer at
+			<a href="https://kpmpower.com" target="_blank" rel="noopener noreferrer">KPM Power</a>.
 		</p>
 	</div>
 </section>
 
 <style>
 	.banner {
-		background-image: url("page/home.jpg");
+		background-image: url("/page/home.jpg");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
