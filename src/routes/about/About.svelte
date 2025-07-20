@@ -5,7 +5,7 @@
 </script>
 
 <article class="app-bg-white">
-	<div class={`row align-items-center g-4 ${flip ? 'flex-row-reverse' : ''}`}>
+	<div class={`row align-items-center g-4 ${flip ? "flex-row-reverse" : ""}`}>
 		<div class="col-md-6">
 			<img src={imgSrc} alt={imgAlt ?? title} class="img-fluid rounded shadow-sm" />
 		</div>
