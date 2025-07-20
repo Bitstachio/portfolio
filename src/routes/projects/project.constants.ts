@@ -23,7 +23,7 @@ export const projectConfigs: IProjectProps[] = [
 			"Created and published a sequence memory game on Google Play using Java and Android Studio",
 			"Developed and deployed an API on Google Cloud Platform using Java, Spring Boot, Firebase, and WebSockets enabling two-way client-server communication for real-time gaming and matchmaking",
 		],
-		tools: getTools(["java", "androidStudio", "spring", "firebase", "gcp"]),
+		tools: getTools(["java", "androidStudio", "firebase", "spring", "gcp"]),
 		srcImg: "project/mad-grid.png",
 		links: [
 			{

@@ -3,7 +3,8 @@
 	import { projectConfigs } from "./project.constants";
 </script>
 
-<section class="p-5">
+<section class="app-container-main">
+	<h1>Projects</h1>
 	<section class="container">
 		<div class="row">
 			{#each projectConfigs as config (config.title)}
