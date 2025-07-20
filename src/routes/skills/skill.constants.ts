@@ -5,6 +5,10 @@ const pathLanguages = pathDevIcons + "languages/";
 const pathFrameworks = pathDevIcons + "frameworks/";
 const pathTools = pathDevIcons + "tools/";
 
+export const skills = [
+
+]
+
 export const programmingLanguages: INamedIcon[] = [
 	{
 		name: "Java",
@@ -36,6 +40,100 @@ export const programmingLanguages: INamedIcon[] = [
 	},
 ];
 
-export const frameworks: INamedIcon[] = [];
+export const frameworks: INamedIcon[] = [
+	{
+		name: "Spring Boot",
+		iconSrc: pathFrameworks + "spring.svg",
+	},
+	{
+		name: ".NET Core",
+		iconSrc: pathFrameworks + "dotnetcore.svg",
+	},
+	{
+		name: "JUnit",
+		iconSrc: pathFrameworks + "junit.svg",
+	},
+	{
+		name: "Selenium",
+		iconSrc: pathFrameworks + "selenium.svg",
+	},
+	{
+		name: "Flask",
+		iconSrc: pathFrameworks + "flask.svg",
+	},
+	{
+		name: "Unity",
+		iconSrc: pathFrameworks + "unity.svg",
+	},
+	{
+		name: "Unit",
+		iconSrc: pathFrameworks + "unity.svg",
+	},
+	{
+		name: "Node.js",
+		iconSrc: pathFrameworks + "nodejs.svg",
+	},
+	{
+		name: "Express",
+		iconSrc: pathFrameworks + "express.svg",
+	},
+	{
+		name: "React",
+		iconSrc: pathFrameworks + "react.svg",
+	},
+	{
+		name: "Svelte",
+		iconSrc: pathFrameworks + "svelte.svg",
+	},
+];
 
-export const tools: INamedIcon[] = [];
+export const tools: INamedIcon[] = [
+	{
+		name: "Git",
+		iconSrc: pathTools + "git.svg",
+	},
+	{
+		name: "Jenkins",
+		iconSrc: pathTools + "jenkins.svg",
+	},
+	{
+		name: "Android Studio",
+		iconSrc: pathTools + "android-studio.svg",
+	},
+	{
+		name: "firebase",
+		iconSrc: pathTools + "firebase.svg",
+	},
+	{
+		name: "Docker",
+		iconSrc: pathTools + "docker.svg",
+	},
+	{
+		name: "Google Cloud Platform",
+		iconSrc: pathTools + "gcp.svg",
+	},
+	{
+		name: "Postman",
+		iconSrc: pathTools + "postman.svg",
+	},
+	{
+		name: "MySQL",
+		iconSrc: pathTools + "mysql.svg",
+	},
+	{
+		name: "Vercel",
+		iconSrc: pathTools + "vercel.svg",
+	},
+	{
+		name: "Webpack",
+		iconSrc: pathTools + "webpack.svg",
+	},
+	{
+		name: "Vite",
+		iconSrc: pathTools + "vite.svg",
+	},
+	{
+		name: "Maven",
+		iconSrc: pathTools + "maven.svg",
+	},
+];
