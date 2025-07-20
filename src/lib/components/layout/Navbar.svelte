@@ -6,7 +6,7 @@
 	<div class="container-fluid">
 		<div class="d-flex align-items-center gap-2">
 			<img src={logo} alt="Logo" height="25rem" />
-			<a class="navbar-brand" href="#">Barbod Habibi</a>
+			<h5 class="text-white mb-0 me-3"><strong>Barbod Habibi</strong></h5>
 		</div>
 		<button
 			class="navbar-toggler"
