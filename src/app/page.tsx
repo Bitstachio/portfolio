@@ -1,4 +1,5 @@
 import Connect from "../../components/sections/Connect/Connect";
+import Experiences from "../../components/sections/experience/Experiences/Experiences";
 import Intro from "../../components/sections/Intro/Intro";
 
 export default function Home() {
@@ -8,7 +9,9 @@ export default function Home() {
         <Intro />
         <Connect />
       </header>
-      <section></section>
+      <section>
+        <Experiences />
+      </section>
     </main>
   );
 }
