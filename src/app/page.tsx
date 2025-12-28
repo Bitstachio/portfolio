@@ -1,13 +1,13 @@
-import Image from "next/image";
+import Connect from "../../components/sections/Connect/Connect";
 import Intro from "../../components/sections/Intro/Intro";
 
 export default function Home() {
-  // TODO:
   return (
     <main>
-      <section>
+      <header>
         <Intro />
-      </section>
+        <Connect />
+      </header>
       <section></section>
     </main>
   );
