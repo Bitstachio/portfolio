@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 type TCardProps = {
   url: string;
   ariaLabel: string;
-  children: ReactNode;
+  children?: ReactNode;
 };
 
 const Card = ({ url, ariaLabel, children }: TCardProps) => (
