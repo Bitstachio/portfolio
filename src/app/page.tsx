@@ -1,6 +1,6 @@
-import Connect from "../../components/sections/Connect/Connect";
-import Experiences from "../../components/sections/experience/Experiences/Experiences";
-import Intro from "../../components/sections/Intro/Intro";
+import Connect from "../components/sections/Connect/Connect";
+import Experience from "../components/sections/Experience/Experience";
+import Intro from "../components/sections/Intro/Intro";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
         <Connect />
       </header>
       <section>
-        <Experiences />
+        <Experience />
       </section>
     </main>
   );

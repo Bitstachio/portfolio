@@ -1,6 +1,6 @@
-import { TCompany, TExperience } from "./Experiences.types";
+import { TCompany, TExperience } from "./Experience.types";
 
-const companies: Record<string, TCompany> = {
+const companies = {
   kpm: {
     name: "KPM Power Inc.",
     url: "https://www.kpmpower.com/",
@@ -17,7 +17,7 @@ const companies: Record<string, TCompany> = {
     name: "York University | AI & Mathematical Modelling Lab",
     url: "https://aimmlab.org/",
   },
-};
+} satisfies Record<string, TCompany>;
 
 export const experiences: TExperience[] = [
   {

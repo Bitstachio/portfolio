@@ -1,7 +1,7 @@
-import ExperienceCard from "../ExperienceCard/ExperienceCard";
-import { experiences } from "./Experiences.constants";
+import ExperienceCard from "./ExperienceCard/ExperienceCard";
+import { experiences } from "./Experience.constants";
 
-const Experiences = () => (
+const Experience = () => (
   <section>
     {experiences.map((experience) => (
       <ExperienceCard
@@ -17,4 +17,4 @@ const Experiences = () => (
   </section>
 );
 
-export default Experiences;
+export default Experience;
