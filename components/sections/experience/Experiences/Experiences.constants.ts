@@ -25,7 +25,7 @@ export const experiences: TExperience[] = [
     title: "Full-Stack Developer",
     company: companies.kpm,
     description:
-      "I worked on software used directly on the production floor. I built a React-based assembly tree view that made it easier for workers to navigate components, saving significant manual effort. I also developed a Node.js and Express API that enabled live tracking across dozens of production kiosks, helping teams detect issues immediately. In addition, I led the development of a kiosk application using Electron, WebSockets, and Docker, centralizing session logic in an API to keep the system reliable even during kiosk failures.",
+      "Worked on software used directly on the production floor. Built a React-based assembly tree view that simplified component navigation and reduced manual effort. Developed a Node.js and Express API for live tracking across dozens of production kiosks, enabling immediate issue detection. Led development of a kiosk application using Electron, WebSockets, and Docker, centralizing session logic in an API to maintain reliability during kiosk failures.",
     startDate: new Date(2025, 4, 1),
     endDate: new Date(2025, 7, 31),
   },
@@ -34,7 +34,7 @@ export const experiences: TExperience[] = [
     title: "Back-End Developer",
     company: companies.mccss,
     description:
-      "I developed back-end services for a healthcare system used by public health agencies across Ontario. My work focused on implementing business logic for creating and searching patient records using Java, Spring Boot, and Oracle Database. I also built a reporting service that allowed users to track patient record changes by date. Alongside a small team, I helped containerize the system and set up CI/CD pipelines with Docker and Jenkins, which significantly reduced deployment time.",
+      "Developed back-end services for a healthcare system used by public health agencies across Ontario. Implemented business logic for creating and searching patient records using Java, Spring Boot, and Oracle Database. Built a reporting service to track patient record changes by date, and helped containerize the system and set up CI/CD pipelines with Docker and Jenkins to significantly reduce deployment time.",
     startDate: new Date(2024, 4, 1),
     endDate: new Date(2024, 7, 31),
   },
@@ -43,7 +43,7 @@ export const experiences: TExperience[] = [
     title: "QA Automation Developer",
     company: companies.mccss,
     description:
-      "I built and maintained an automated testing system to replace slow, manual regression testing. Using Java and Selenium, I developed a test suite that covered the full regression workflow and cut testing time by several days. I also created a data access layer using JDBC and SQL stored procedures to generate test data automatically, greatly reducing preparation effort. To support reporting and bug tracking, I automated the creation of Excel test reports using Apache POI.",
+      "Built and maintained an automated testing system to replace manual regression testing. Developed a Java and Selenium test suite covering the full regression workflow, reducing testing time by several days. Created a data access layer with JDBC and SQL stored procedures to automate test data generation, and automated Excel test reports using Apache POI.",
     startDate: new Date(2023, 8, 1),
     endDate: new Date(2024, 3, 30),
   },
@@ -52,7 +52,7 @@ export const experiences: TExperience[] = [
     title: "Research Assistant",
     company: companies.cmg,
     description:
-      "I worked on a research project focused on blockchain consensus protocols. I developed a Java-based simulator that modeled an abstract Bitcoin network and proof-of-work mechanism. I also refactored existing codebases to improve structure and maintainability, integrated Maven for builds, and added unit testing with Mockito and PowerMock. To reduce boilerplate and improve readability, I introduced Lombok across the project.",
+      "Worked on a research project focused on blockchain consensus protocols. Developed a Java-based simulator modeling an abstract Bitcoin network and proof-of-work mechanism. Refactored existing codebases for better structure and maintainability, integrated Maven builds, added unit testing with Mockito and PowerMock, and introduced Lombok to reduce boilerplate.",
     startDate: new Date(2024, 4, 1),
     endDate: new Date(2024, 7, 31),
   },
@@ -61,7 +61,7 @@ export const experiences: TExperience[] = [
     title: "Research Assistant",
     company: companies.aimmlab,
     description:
-      "I contributed to a research project on infectious disease modeling. I built a simulator in Python using NetworkX and NumPy to study how diseases spread through networks. I also collected and cleaned large-scale forum data, processing millions of messages using BeautifulSoup and pandas to support topic modeling and analysis.",
+      "Contributed to a research project on infectious disease modeling. Built a Python-based simulator using NetworkX and NumPy to study disease spread through networks. Collected and cleaned large-scale forum data, processing millions of messages with BeautifulSoup and pandas to support topic modeling and analysis.",
     startDate: new Date(2023, 4, 1),
     endDate: new Date(2023, 7, 31),
   },
