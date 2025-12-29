@@ -1,3 +1,4 @@
+import Card from "@/components/ui/Card/Card";
 import { dateFormatter } from "@/utils/date";
 
 type TExperienceCardProps = {
@@ -10,20 +11,7 @@ type TExperienceCardProps = {
 };
 
 const ExperienceCard = ({ title, company, description, startDate, endDate, url }: TExperienceCardProps) => (
-  <article
-    className="
-      group relative mx-auto max-w-3xl p-5 rounded-lg transition-all duration-300 hover:bg-white/2
-      border-t border-transparent hover:border-slate-500/20
-    "
-  >
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="absolute inset-0 z-10"
-      aria-label={`${title} at ${company}`}
-    />
-
+  <Card url={url} ariaLabel={`${title} at ${company}`}>
     <div className="flex gap-6">
       <div className="w-42 flex-shrink-0">
         <p className="text-xs text-subtle font-semibold">
@@ -37,7 +25,7 @@ const ExperienceCard = ({ title, company, description, startDate, endDate, url }
         <p className="text-muted mt-2">{description}</p>
       </div>
     </div>
-  </article>
+  </Card>
 );
 
 export default ExperienceCard;
