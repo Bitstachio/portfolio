@@ -8,6 +8,7 @@ export const projects = [
       "Collaborated with a team of 5 to design, develop, and publish an indie underwater exploration game on itch.io.",
     url: "https://nessyu.itch.io/deepseeker",
     fileName: "deepseeker",
+    badgeNames: ["csharp", "unity"],
   },
   {
     id: "mad-grid",
@@ -16,5 +17,6 @@ export const projects = [
       "Developed a multiplayer sequence memory game for Android and created an API implementing the STOMP protocol to enable two-way client-server communication for real-time gaming and matchmaking.",
     url: "https://github.com/Bitstachio/mad-grid",
     fileName: "mad-grid",
+    badgeNames: ["java", "androidStudio", "spring", "firebase"],
   },
 ] satisfies TProject[];

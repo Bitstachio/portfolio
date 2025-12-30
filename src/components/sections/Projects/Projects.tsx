@@ -10,6 +10,7 @@ const Projects = () => (
         description={project.description}
         url={project.url}
         imgSrc={`/projects/${project.fileName}.png`}
+        badgeNames={project.badgeNames}
       />
     ))}
   </section>

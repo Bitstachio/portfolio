@@ -1,3 +1,5 @@
+import { TBadgeName } from "@/components/ui/Badge/Badge.types";
+import Badges from "@/components/ui/Badges/Badges";
 import Card from "@/components/ui/Card/Card";
 import { dateFormatter } from "@/utils/date";
 
@@ -8,9 +10,10 @@ type TExperienceCardProps = {
   startDate: Date;
   endDate?: Date;
   url: string;
+  badgeNames: TBadgeName[];
 };
 
-const ExperienceCard = ({ title, company, description, startDate, endDate, url }: TExperienceCardProps) => (
+const ExperienceCard = ({ title, company, description, startDate, endDate, url, badgeNames }: TExperienceCardProps) => (
   <Card url={url} ariaLabel={`${title} at ${company}`}>
     <div className="flex gap-5">
       <div className="w-36 flex-shrink-0">
@@ -22,6 +25,7 @@ const ExperienceCard = ({ title, company, description, startDate, endDate, url }
         <h3 className="group-hover:text-accent duration-300 font-bold">{title}</h3>
         <p className="text-subtle font-semibold">{company}</p>
         <p className="text-muted mt-2">{description}</p>
+        <Badges names={badgeNames} />
       </div>
     </div>
   </Card>
