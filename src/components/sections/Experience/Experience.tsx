@@ -12,6 +12,7 @@ const Experience = () => (
         startDate={experience.startDate}
         endDate={experience.endDate}
         url={experience.company.url}
+        badgeNames={experience.badgeNames}
       />
     ))}
   </section>

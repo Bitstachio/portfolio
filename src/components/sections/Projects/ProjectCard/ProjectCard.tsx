@@ -1,3 +1,5 @@
+import { TBadgeName } from "@/components/ui/Badge/Badge.types";
+import Badges from "@/components/ui/Badges/Badges";
 import Card from "@/components/ui/Card/Card";
 import Image from "next/image";
 
@@ -6,9 +8,10 @@ type TProjectCardProps = {
   description: string;
   url: string;
   imgSrc: string;
+  badgeNames: TBadgeName[];
 };
 
-const ProjectCard = ({ name, description, url, imgSrc }: TProjectCardProps) => (
+const ProjectCard = ({ name, description, url, imgSrc, badgeNames }: TProjectCardProps) => (
   <Card url={url} ariaLabel={name}>
     <div className="flex gap-5">
       <div className="w-36 flex-shrink-0">
@@ -23,6 +26,7 @@ const ProjectCard = ({ name, description, url, imgSrc }: TProjectCardProps) => (
       <div>
         <h3 className="group-hover:text-accent duration-300 font-bold">{name}</h3>
         <p className="text-muted mt-2">{description}</p>
+        <Badges names={badgeNames} />
       </div>
     </div>
   </Card>
