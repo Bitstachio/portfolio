@@ -19,4 +19,13 @@ export const projects = [
     fileName: "mad-grid",
     badgeNames: ["java", "androidStudio", "spring", "firebase"],
   },
+  {
+    id: "solve-me",
+    name: "Solve Me!",
+    description:
+      "Developed and deployed an interactive graph search visualizer showcasing BFS, DFS, and recursive backtracking. Features report generation comparing algorithm performance based on solution path lengths.",
+    url: "https://bitstachio.github.io/solve-me",
+    fileName: "solve-me",
+    badgeNames: ["javascript", "d3"],
+  },
 ] satisfies TProject[];

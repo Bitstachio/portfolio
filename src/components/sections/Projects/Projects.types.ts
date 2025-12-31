@@ -1,4 +1,4 @@
-import { TBadgeName } from "@/components/ui/Badge/Badge.types";
+import { TIconName } from "@/assets/icons";
 
 export type TProject = {
   id: string;
@@ -6,5 +6,5 @@ export type TProject = {
   description: string;
   url: string;
   fileName: string;
-  badgeNames: TBadgeName[];
+  badgeNames: TIconName[];
 };

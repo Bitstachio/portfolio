@@ -1,7 +1,12 @@
+import { FC, SVGProps } from "react";
+import GitHubIcon from "./social/github.svg";
+import GmailIcon from "./social/gmail.svg";
+import LinkedInIcon from "./social/linkedin.svg";
 import AndroidStudioIcon from "./tech/androidstudio.svg";
 import ApacheIcon from "./tech/apache.svg";
 import CppIcon from "./tech/cpp.svg";
-import CsharpIcon from "./tech/csharp.svg";
+import CSharpIcon from "./tech/csharp.svg";
+import D3Icon from "./tech/d3.svg";
 import DockerIcon from "./tech/docker.svg";
 import ElectronIcon from "./tech/electron.svg";
 import ExpressIcon from "./tech/express.svg";
@@ -22,13 +27,9 @@ import PythonIcon from "./tech/python.svg";
 import ReactIcon from "./tech/react.svg";
 import SeleniumIcon from "./tech/selenium.svg";
 import SequelizeIcon from "./tech/sequelize.svg";
-import GitHubIcon from "./social/github.svg";
-import GmailIcon from "./social/gmail.svg";
-import LinkedInIcon from "./social/linkedin.svg";
 import SpringIcon from "./tech/spring.svg";
 import TypeScriptIcon from "./tech/typescript.svg";
 import UnityIcon from "./tech/unity.svg";
-import { FC, SVGProps } from "react";
 
 type TIcon = {
   label: string;
@@ -66,7 +67,11 @@ export const icons = {
   },
   csharp: {
     label: "C#",
-    svg: CsharpIcon,
+    svg: CSharpIcon,
+  },
+  d3: {
+    label: "D3.js",
+    svg: D3Icon,
   },
   docker: {
     label: "Docker",
