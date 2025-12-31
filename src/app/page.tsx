@@ -7,14 +7,16 @@ import About from "@/components/sections/About/About";
 
 export default function Home() {
   return (
-    <div className="px-6 py-12 max-w-screen-xl mx-auto">
-      <div className="flex justify-between gap-4 md:py-12">
-        <header className="w-1/2 max-w-sm md:ps-5">
-          <Intro />
-          <Navbar />
+    <div className="px-6 max-w-screen-xl mx-auto">
+      <div className="flex justify-between gap-4 items-start">
+        <header className="sticky top-0 h-screen w-1/2 max-w-sm flex flex-col justify-between py-24 md:ps-5">
+          <div>
+            <Intro />
+            <Navbar />
+          </div>
           <Connect />
         </header>
-        <main className="flex flex-col gap-16 w-1/2">
+        <main className="w-1/2 flex flex-col gap-16 py-24">
           <About />
           <Experience />
           <Projects />
