@@ -1,8 +1,8 @@
+import { TIconName } from "@/assets/icons";
 import Badge from "../Badge/Badge";
-import { TBadgeName } from "../Badge/Badge.types";
 
 type TBadgesProps = {
-  names: TBadgeName[];
+  names: TIconName[];
 };
 
 const Badges = ({ names }: TBadgesProps) => (
