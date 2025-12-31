@@ -1,4 +1,4 @@
-import { TBadgeName } from "@/components/ui/Badge/Badge.types";
+import { TIconName } from "@/assets/icons";
 import Badges from "@/components/ui/Badges/Badges";
 import Card from "@/components/ui/Card/Card";
 import Image from "next/image";
@@ -8,7 +8,7 @@ type TProjectCardProps = {
   description: string;
   url: string;
   imgSrc: string;
-  badgeNames: TBadgeName[];
+  badgeNames: TIconName[];
 };
 
 const ProjectCard = ({ name, description, url, imgSrc, badgeNames }: TProjectCardProps) => (
