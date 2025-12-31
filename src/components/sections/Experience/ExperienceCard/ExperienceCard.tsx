@@ -1,4 +1,4 @@
-import { TBadgeName } from "@/components/ui/Badge/Badge.types";
+import { TIconName } from "@/assets/icons";
 import Badges from "@/components/ui/Badges/Badges";
 import Card from "@/components/ui/Card/Card";
 import { dateFormatter } from "@/utils/date";
@@ -10,7 +10,7 @@ type TExperienceCardProps = {
   startDate: Date;
   endDate?: Date;
   url: string;
-  badgeNames: TBadgeName[];
+  badgeNames: TIconName[];
 };
 
 const ExperienceCard = ({ title, company, description, startDate, endDate, url, badgeNames }: TExperienceCardProps) => (

@@ -1,4 +1,4 @@
-import { TBadgeName } from "@/components/ui/Badge/Badge.types";
+import { TIconName } from "@/assets/icons";
 
 export type TCompany = {
   name: string;
@@ -12,5 +12,5 @@ export type TExperience = {
   description: string;
   startDate: Date;
   endDate?: Date;
-  badgeNames: TBadgeName[];
+  badgeNames: TIconName[];
 };
