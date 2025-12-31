@@ -4,7 +4,7 @@ export const navItems = [
   {
     id: "about",
     label: "About",
-    href: "#",
+    href: "#about",
   },
   {
     id: "experience",
@@ -17,3 +17,5 @@ export const navItems = [
     href: "#projects",
   },
 ] satisfies TNavItem[];
+
+export const ROOT_SECTION_ID = navItems[0].id;

@@ -7,13 +7,17 @@ export const useActiveSection = (sectionIds: string[]) => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          // If the section is occupying 50% or more of the viewport
           if (entry.isIntersecting) {
             setActiveId(entry.target.id);
           }
         });
+
+        const scrollPosition = window.innerHeight + window.scrollY;
+        if (scrollPosition >= document.documentElement.scrollHeight - 10) {
+          setActiveId(sectionIds[sectionIds.length - 1]);
+        }
       },
-      { rootMargin: "-25% 0% -70% 0%" },
+      { rootMargin: "-10% 0% -80% 0%", threshold: 0 },
     );
 
     sectionIds.forEach((id) => {
