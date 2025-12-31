@@ -1,9 +1,14 @@
 const About = () => (
-  <article className="text-muted">
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus veritatis explicabo ab et quod necessitatibus
-    fuga iusto repudiandae adipisci ex. Illum facere, dolore fugit mollitia esse reiciendis quas voluptatibus voluptate
-    nemo corrupti expedita animi tenetur laudantium ad vel quidem atque voluptas libero odit enim corporis, praesentium
-    officiis nostrum? Voluptatum, quam.
+  <article id="about" className="text-muted flex flex-col gap-3">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum earum eveniet, unde doloremque placeat, dolor
+      ipsam natus assumenda repudiandae voluptate incidunt blanditiis, cum cupiditate?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium libero architecto minima soluta eos nulla
+      eius, modi excepturi perferendis eveniet quasi facere assumenda, dolorum nemo?
+    </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, atque.</p>
   </article>
 );
 

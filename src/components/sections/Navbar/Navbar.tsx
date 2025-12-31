@@ -1,6 +1,6 @@
 "use client";
-import { navItems } from "./Navbar.constants";
-import { useActiveSection } from "./useNavbar";
+import { navItems, ROOT_SECTION_ID } from "./Navbar.constants";
+import { useActiveSection } from "./useActiveSection";
 
 const Navbar = () => {
   const activeId = useActiveSection(navItems.map((item) => item.href.replace("#", "")));
@@ -19,7 +19,7 @@ const Navbar = () => {
           return (
             <li key={item.id}>
               <a
-                href={item.href}
+                href={item.href === "#" + ROOT_SECTION_ID ? "#" : item.href}
                 className={`group flex items-center gap-3 p-1 transition-all font-semibold ${isActive ? "text-foreground" : "text-subtle hover:text-foreground"}`}
               >
                 <span
