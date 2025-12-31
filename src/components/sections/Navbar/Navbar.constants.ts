@@ -4,7 +4,7 @@ export const navItems = [
   {
     id: "about",
     label: "About",
-    href: "#about",
+    href: "#",
   },
   {
     id: "experience",

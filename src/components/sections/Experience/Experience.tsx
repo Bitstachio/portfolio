@@ -2,7 +2,7 @@ import ExperienceCard from "./ExperienceCard/ExperienceCard";
 import { experiences } from "./Experience.constants";
 
 const Experience = () => (
-  <section>
+  <section id="experience" className="scroll-mt-16">
     {experiences.map((experience) => (
       <ExperienceCard
         key={experience.id}

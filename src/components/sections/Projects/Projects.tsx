@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard/ProjectCard";
 import { projects } from "./Projects.constants";
 
 const Projects = () => (
-  <section>
+  <section id="projects" className="scroll-mt-16">
     {projects.map((project) => (
       <ProjectCard
         key={project.id}
