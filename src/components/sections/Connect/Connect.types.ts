@@ -1,5 +1,7 @@
+import { TIconName } from "@/assets/icons";
+
 export type TConnectLinkConfig = {
   id: string;
-  fileName: string;
+  iconName: TIconName;
   href: string;
 };
