@@ -17,14 +17,14 @@ const ExperienceCard = ({ title, company, description, startDate, endDate, url, 
   <Card url={url} ariaLabel={`${title} at ${company}`}>
     <div className="flex gap-5">
       <div className="w-36 flex-shrink-0">
-        <p className="text-xs text-muted font-semibold">
+        <p className="text-muted text-xs font-semibold">
           {dateFormatter.format(startDate)} &ndash; {endDate ? dateFormatter.format(endDate) : "Present"}
         </p>
       </div>
       <div>
-        <h3 className="text-strong group-hover:text-accent duration-300 font-bold">{title}</h3>
+        <h3 className="text-strong group-hover:text-accent font-bold duration-300">{title}</h3>
         <p className="text-muted font-semibold">{company}</p>
-        <p className="text-sm mt-2">{description}</p>
+        <p className="mt-2 text-sm">{description}</p>
         <Badges names={badgeNames} />
       </div>
     </div>

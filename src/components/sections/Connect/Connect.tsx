@@ -8,7 +8,7 @@ const Connect = () => (
         <a href={config.href}>
           <Icon
             name={config.iconName}
-            className="h-5 w-5 sm:h-6 sm:w-6 fill-muted hover:fill-strong transition-[fill] duration-300"
+            className="fill-muted hover:fill-strong h-5 w-5 transition-[fill] duration-300 sm:h-6 sm:w-6"
           />
         </a>
       </li>

@@ -20,10 +20,10 @@ const Navbar = () => {
             <li key={item.id}>
               <a
                 href={item.href === "#" + ROOT_SECTION_ID ? "#" : item.href}
-                className={`group flex py-3 text-xs items-center gap-3 p-1 transition-all font-semibold ${isActive ? "text-strong" : "text-muted hover:text-strong"}`}
+                className={`group flex items-center gap-3 p-1 py-3 text-xs font-semibold transition-all ${isActive ? "text-strong" : "text-muted hover:text-strong"}`}
               >
                 <span
-                  className={`inline-block h-px duration-300 ${isActive ? "w-16 bg-gray-400" : "w-8 group-hover:w-16 bg-gray-400/50 group-hover:bg-gray-400"}`}
+                  className={`inline-block h-px duration-300 ${isActive ? "w-16 bg-gray-400" : "w-8 bg-gray-400/50 group-hover:w-16 group-hover:bg-gray-400"}`}
                 />
                 {item.label.toUpperCase()}
               </a>

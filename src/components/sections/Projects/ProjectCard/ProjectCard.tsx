@@ -20,12 +20,12 @@ const ProjectCard = ({ name, description, url, imgSrc, badgeNames }: TProjectCar
           alt={`${name} image`}
           width={132}
           height={76}
-          className="rounded border duration-300 border-slate-700 group-hover:border-slate-500"
+          className="rounded border border-slate-700 duration-300 group-hover:border-slate-500"
         />
       </div>
       <div>
-        <h3 className="text-strong group-hover:text-accent duration-300 font-bold">{name}</h3>
-        <p className="text-sm mt-2">{description}</p>
+        <h3 className="text-strong group-hover:text-accent font-bold duration-300">{name}</h3>
+        <p className="mt-2 text-sm">{description}</p>
         <Badges names={badgeNames} />
       </div>
     </div>
