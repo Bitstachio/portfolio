@@ -47,3 +47,7 @@ body {
   color: var(--text-primary);
   @apply font-sans antialiased;
 }
+
+.app-text-link {
+  @apply text-strong hover:text-accent font-semibold transition-colors duration-300;
+}
