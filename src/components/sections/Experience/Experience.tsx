@@ -1,8 +1,9 @@
-import ExperienceCard from "./ExperienceCard/ExperienceCard";
+import CardContainer from "@/components/ui/CardContainer/CardContainer";
 import { experiences } from "./Experience.constants";
+import ExperienceCard from "./ExperienceCard/ExperienceCard";
 
 const Experience = () => (
-  <section id="experience" className="scroll-mt-16">
+  <CardContainer id="experience">
     {experiences.map((experience) => (
       <ExperienceCard
         key={experience.id}
@@ -15,7 +16,7 @@ const Experience = () => (
         badgeNames={experience.badgeNames}
       />
     ))}
-  </section>
+  </CardContainer>
 );
 
 export default Experience;

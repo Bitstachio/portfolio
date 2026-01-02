@@ -1,8 +1,9 @@
+import CardContainer from "@/components/ui/CardContainer/CardContainer";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import { projects } from "./Projects.constants";
 
 const Projects = () => (
-  <section id="projects" className="scroll-mt-16">
+  <CardContainer id="projects">
     {projects.map((project) => (
       <ProjectCard
         key={project.id}
@@ -13,7 +14,7 @@ const Projects = () => (
         badgeNames={project.badgeNames}
       />
     ))}
-  </section>
+  </CardContainer>
 );
 
 export default Projects;
