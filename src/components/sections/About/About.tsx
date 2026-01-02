@@ -1,5 +1,5 @@
 const About = () => (
-  <article id="about" className="text-muted flex flex-col gap-3">
+  <article id="about" className="flex flex-col gap-3">
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum earum eveniet, unde doloremque placeat, dolor
       ipsam natus assumenda repudiandae voluptate incidunt blanditiis, cum cupiditate?

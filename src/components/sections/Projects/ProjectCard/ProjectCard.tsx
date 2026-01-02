@@ -24,8 +24,8 @@ const ProjectCard = ({ name, description, url, imgSrc, badgeNames }: TProjectCar
         />
       </div>
       <div>
-        <h3 className="group-hover:text-accent duration-300 font-bold">{name}</h3>
-        <p className="text-muted mt-2">{description}</p>
+        <h3 className="text-strong group-hover:text-accent duration-300 font-bold">{name}</h3>
+        <p className="text-sm mt-2">{description}</p>
         <Badges names={badgeNames} />
       </div>
     </div>

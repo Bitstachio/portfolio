@@ -1,23 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --bg-main: #0e1420;
-  --bg-surface: #141c2f;
-  --bg-elevated: #1b2540 --text-primary: #e5e7eb;
+  /* Backgrounds (slightly darker VS Code inspired) */
+  --bg-main: #191919;
+  --bg-surface: #202020;
+  --bg-elevated: #282828;
 
-  --text-primary: #e6edf7;
-  --text-secondary: #a7b0c0;
-  --text-tertiary: #6b728a;
+  /* Text */
+  --text-strong: #e6e6e6;
+  --text-primary: #bcbcbc;
+  --text-secondary: #8a8a8a;
 
-  --accent-primary: #22d3ee;
-  --accent-hover: #67e8f9;
-  --accent-active: #06b6d4;
+  /* Accent (spring green) */
+  --accent-primary: #00e676;
+  --accent-hover: #33f08c;
+  --accent-active: #00c853;
 
-  --border-default: #1f2937;
-  --border-muted: #111827;
+  --focus-ring: rgba(0, 230, 118, 0.55);
+  --shadow-accent: 0 0 28px rgba(0, 230, 118, 0.35);
 
-  --focus-ring: rgba(34, 211, 238, 0.45);
-  --shadow-accent: 0 0 24px rgba(34, 211, 238, 0.25);
+  /* Borders & effects */
+  --border-default: #333333;
+  --border-muted: #262626;
 }
 
 @theme inline {
@@ -25,9 +29,9 @@
   --color-surface: var(--bg-surface);
   --color-elevated: var(--bg-elevated);
 
+  --color-strong: var(--text-strong);
   --color-foreground: var(--text-primary);
   --color-muted: var(--text-secondary);
-  --color-subtle: var(--text-tertiary);
 
   --color-accent: var(--accent-primary);
   --color-accent-hover: var(--accent-hover);
