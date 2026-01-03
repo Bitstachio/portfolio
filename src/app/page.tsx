@@ -16,7 +16,7 @@ export default function Home() {
           </div>
           <Connect />
         </header>
-        <main className="flex w-[52%] flex-col gap-16 py-24">
+        <main className="flex w-[52%] flex-col gap-24 py-24">
           <About />
           <Experience />
           <Projects />
