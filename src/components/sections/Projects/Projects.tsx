@@ -1,4 +1,5 @@
 import CardContainer from "@/components/ui/CardContainer/CardContainer";
+import { basePath } from "@/utils/path";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import { projects } from "./Projects.constants";
 
@@ -10,7 +11,7 @@ const Projects = () => (
         name={project.name}
         description={project.description}
         url={project.url}
-        imgSrc={`/projects/${project.fileName}.png`}
+        imgSrc={`${basePath}/projects/${project.fileName}.png`}
         badgeNames={project.badgeNames}
       />
     ))}
