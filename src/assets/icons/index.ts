@@ -15,6 +15,7 @@ import HibernateIcon from "./tech/hibernate.svg";
 import JavaIcon from "./tech/java.svg";
 import JavaScriptIcon from "./tech/javascript.svg";
 import JenkinsIcon from "./tech/jenkins.svg";
+import JuceIcon from "./tech/juce.svg";
 import MssqlIcon from "./tech/mssql.svg";
 import MySqlIcon from "./tech/mysql.svg";
 import NetworkXIcon from "./tech/networkx.svg";
@@ -104,6 +105,10 @@ export const icons = {
   jenkins: {
     label: "Jenkins",
     svg: JenkinsIcon,
+  },
+  juce: {
+    label: "JUCE",
+    svg: JuceIcon,
   },
   mssql: {
     label: "MSSQL",

@@ -28,4 +28,13 @@ export const projects = [
     fileName: "solve-me",
     badgeNames: ["javascript", "d3"],
   },
+  {
+    id: "midi-chord-arpeggiator",
+    name: "MIDI Chord Arpeggiator",
+    description:
+      "A MIDI plugin supporting multiple chord types, arpeggiation patterns, and a combined chord-plus-arpeggiator mode.",
+    url: "https://github.com/Bitstachio/midi-chord-arpeggiator",
+    fileName: "midi-chord-arpeggiator",
+    badgeNames: ["cpp", "juce"],
+  },
 ] satisfies TProject[];
