@@ -28,7 +28,7 @@ export const experiences: TExperience[] = [
       "Worked on software used directly on the production floor. Built a React-based assembly tree view that simplified component navigation and reduced manual effort. Developed a Node.js and Express API for live tracking across dozens of production kiosks, enabling immediate issue detection. Led development of a kiosk application using Electron, WebSockets, and Docker, centralizing session logic in an API to maintain reliability during kiosk failures.",
     startDate: new Date(2025, 4, 1),
     endDate: new Date(2025, 7, 31),
-    badgeNames: ["typescript", "javascript", "react", "node", "express", "electron", "sequelize", "mysql"],
+    badgeNames: ["javascript", "typescript", "react", "node", "express", "electron", "sequelize", "mysql"],
   },
   {
     id: "mccss-backend-dev-2024-06",

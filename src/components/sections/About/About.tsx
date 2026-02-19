@@ -8,10 +8,8 @@ const About = () => {
       <p>
         My interest in programming began in 2019 through an introductory robotics course in high school with{" "}
         <TextLink href="https://www.robotc.net/">ROBOTC</TextLink> and{" "}
-        <TextLink href="https://en.wikipedia.org/wiki/Lego_Mindstorms_EV3">LEGO Mindstorms EV3</TextLink> bots. I had a
-        rocky start to the course, struggling with the most basic concepts, and constantly questioning whether
-        programming was right for me. However, after hours of staring at the screen in frustration looking for bugs,
-        things started to click and become enjoyable. The following summer, I picked up Mark Lee&apos;s book,{" "}
+        <TextLink href="https://en.wikipedia.org/wiki/Lego_Mindstorms_EV3">LEGO Mindstorms EV3</TextLink> bots. The
+        following summer, I picked up Mark Lee&apos;s book,{" "}
         <TextLink
           href="https://www.indigo.ca/en-ca/c-programming-for-the-absolute-beginner/9781598638752.html"
           italicize={true}
