@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
 
-## Getting Started
+Built using Next.js and Tailwind CSS, utilizing Static Site Generation (SSG) for optimized performance and deployment on GitHub Pages.
 
-First, run the development server:
+## SVGR Integration
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+The project utilizes [`@svgr/webpack`](https://www.npmjs.com/package/@svgr/webpack) to transform SVG files into React components. The icons are primarily utilized within the skill badges.
+
+- **Single Source of Truth**: A centralized directory at `src/assets/icons` houses all SVG files, ensuring consistency across the application.
+- **Tailwind CSS Styling**: To enable dynamic styling, hardcoded properties (such as `fill`) are removed from the raw SVG source. This allows the icons to be styled using Tailwind classes (e.g., `fill-accent`) rather than being restricted by fixed attributes.
+- **Statically Typed Icons**: An `index.ts` file maps the SVG components to a central `icons` object. By using `keyof typeof icons`, the available icon names are statically typed, preventing runtime errors and improving developer experience.
+
+### Implementation Example
+
+Icons are exported and mapped in [`src/assets/icons/index.ts`](https://github.com/Bitstachio/portfolio/blob/main/src/assets/icons/index.ts):
+
+```typescript
+import GitHubIcon from "./social/github.svg";
+
+export const icons = {
+  github: {
+    label: "GitHub",
+    svg: GitHubIcon,
+  },
+  // ... other icons
+} satisfies Record<string, TIcon>;
+
+export type TIconName = keyof typeof icons;
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+These are then used via a generic [`Icon`](https://github.com/Bitstachio/portfolio/blob/main/src/components/ui/Icon/Icon.tsx) component:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```typescript
+<Icon name={"github"} className="fill-accent h-3 w-3 sm:h-4 sm:w-4" />
+```
