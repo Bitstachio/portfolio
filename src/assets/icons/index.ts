@@ -1,4 +1,5 @@
 import { FC, SVGProps } from "react";
+import DownloadIcon from "./general/download.svg";
 import GitHubIcon from "./social/github.svg";
 import GmailIcon from "./social/gmail.svg";
 import LinkedInIcon from "./social/linkedin.svg";
@@ -40,6 +41,11 @@ type TIcon = {
 export type TIconName = keyof typeof icons;
 
 export const icons = {
+  // General
+  download: {
+    label: "Download",
+    svg: DownloadIcon,
+  },
   // Social
   github: {
     label: "GitHub",

@@ -1,4 +1,5 @@
 "use client";
+import Icon from "@/components/ui/Icon/Icon";
 import { navItems, ROOT_SECTION_ID } from "./Navbar.constants";
 import { useActiveSection } from "./useActiveSection";
 
@@ -30,6 +31,15 @@ const Navbar = () => {
             </li>
           );
         })}
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group text-muted hover:text-strong mt-3 flex items-center gap-3 text-xs font-semibold transition-colors duration-300"
+        >
+          <Icon name="download" className="fill-muted group-hover:fill-accent duration-300" />
+          RESUME
+        </a>
       </ul>
     </nav>
   );
