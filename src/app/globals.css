@@ -11,7 +11,7 @@
   --text-primary: #bcbcbc;
   --text-secondary: #8a8a8a;
 
-  /* Accent (spring green) */
+  /* Accent */
   --accent-primary: #00e676;
   --accent-hover: #33f08c;
   --accent-active: #00c853;
@@ -19,9 +19,12 @@
   --focus-ring: rgba(0, 230, 118, 0.55);
   --shadow-accent: 0 0 28px rgba(0, 230, 118, 0.35);
 
-  /* Borders & effects */
+  /* Borders & Effects */
   --border-default: #333333;
   --border-muted: #262626;
+
+  /* Transitions */
+  --duration-standard: 300ms;
 }
 
 @theme inline {
@@ -40,6 +43,8 @@
   --color-border: var(--border-default);
 
   --font-sans: var(--font-sans);
+
+  --transition-duration-standard: var(--duration-standard);
 }
 
 body {
@@ -49,5 +54,5 @@ body {
 }
 
 .app-text-link {
-  @apply text-strong hover:text-accent font-semibold transition-colors duration-300;
+  @apply text-strong hover:text-accent duration-standard font-semibold transition-colors;
 }

@@ -24,7 +24,7 @@ const Navbar = () => {
                 className={`group flex items-center gap-3 p-1 py-3 text-xs font-semibold transition-all ${isActive ? "text-strong" : "text-muted hover:text-strong"}`}
               >
                 <span
-                  className={`inline-block h-px duration-300 ${isActive ? "w-16 bg-gray-400" : "w-8 bg-gray-400/50 group-hover:w-16 group-hover:bg-gray-400"}`}
+                  className={`duration-standard inline-block h-px ${isActive ? "w-16 bg-gray-400" : "w-8 bg-gray-400/50 group-hover:w-16 group-hover:bg-gray-400"}`}
                 />
                 {item.label.toUpperCase()}
               </a>
@@ -35,9 +35,9 @@ const Navbar = () => {
           href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="group text-muted hover:text-strong mt-3 flex items-center gap-3 text-xs font-semibold transition-colors duration-300"
+          className="group text-muted hover:text-strong duration-standard mt-3 flex items-center gap-3 text-xs font-semibold transition-colors"
         >
-          <Icon name="download" className="fill-muted group-hover:fill-accent duration-300" />
+          <Icon name="download" className="fill-muted group-hover:fill-accent duration-standard transition-all" />
           RESUME
         </a>
       </ul>

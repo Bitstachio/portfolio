@@ -22,7 +22,7 @@ const ExperienceCard = ({ title, company, description, startDate, endDate, url, 
         </p>
       </div>
       <div>
-        <h3 className="text-strong group-hover:text-accent font-bold duration-300">{title}</h3>
+        <h3 className="text-strong group-hover:text-accent duration-standard font-bold">{title}</h3>
         <p className="text-muted font-semibold">{company}</p>
         <p className="mt-2 text-sm">{description}</p>
         <Badges names={badgeNames} />
