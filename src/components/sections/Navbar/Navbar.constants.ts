@@ -16,6 +16,11 @@ export const navItems = [
     label: "Projects",
     href: "#projects",
   },
+  {
+    id: "skills",
+    label: "Skills",
+    href: "#skills",
+  },
 ] satisfies TNavItem[];
 
 export const ROOT_SECTION_ID = navItems[0].id;

@@ -5,6 +5,7 @@ import GmailIcon from "./social/gmail.svg";
 import LinkedInIcon from "./social/linkedin.svg";
 import AndroidStudioIcon from "./tech/androidstudio.svg";
 import ApacheIcon from "./tech/apache.svg";
+import CIcon from "./tech/c.svg";
 import CppIcon from "./tech/cpp.svg";
 import CSharpIcon from "./tech/csharp.svg";
 import D3Icon from "./tech/d3.svg";
@@ -12,6 +13,8 @@ import DockerIcon from "./tech/docker.svg";
 import ElectronIcon from "./tech/electron.svg";
 import ExpressIcon from "./tech/express.svg";
 import FirebaseIcon from "./tech/firebase.svg";
+import FlaskIcon from "./tech/flask.svg";
+import GitIcon from "./tech/git.svg";
 import HibernateIcon from "./tech/hibernate.svg";
 import JavaIcon from "./tech/java.svg";
 import JavaScriptIcon from "./tech/javascript.svg";
@@ -19,17 +22,20 @@ import JenkinsIcon from "./tech/jenkins.svg";
 import JuceIcon from "./tech/juce.svg";
 import MssqlIcon from "./tech/mssql.svg";
 import MySqlIcon from "./tech/mysql.svg";
+import NestIcon from "./tech/nest.svg";
 import NetworkXIcon from "./tech/networkx.svg";
 import NextIcon from "./tech/nextjs.svg";
 import NodeIcon from "./tech/nodejs.svg";
 import NumPyIcon from "./tech/numpy.svg";
 import OracleIcon from "./tech/oracle.svg";
 import PandasIcon from "./tech/pandas.svg";
+import PostmanIcon from "./tech/postman.svg";
 import PythonIcon from "./tech/python.svg";
 import ReactIcon from "./tech/react.svg";
 import SeleniumIcon from "./tech/selenium.svg";
 import SequelizeIcon from "./tech/sequelize.svg";
 import SpringIcon from "./tech/spring.svg";
+import SqlIcon from "./tech/sql.svg";
 import TypeScriptIcon from "./tech/typescript.svg";
 import UnityIcon from "./tech/unity.svg";
 
@@ -68,6 +74,10 @@ export const icons = {
     label: "Apache POI",
     svg: ApacheIcon,
   },
+  c: {
+    label: "C",
+    svg: CIcon,
+  },
   cpp: {
     label: "C++",
     svg: CppIcon,
@@ -95,6 +105,14 @@ export const icons = {
   firebase: {
     label: "Firebase",
     svg: FirebaseIcon,
+  },
+  flask: {
+    label: "Flask",
+    svg: FlaskIcon,
+  },
+  git: {
+    label: "Git",
+    svg: GitIcon,
   },
   hibernate: {
     label: "Hibernate",
@@ -128,6 +146,10 @@ export const icons = {
     label: "NetworkX",
     svg: NetworkXIcon,
   },
+  nest: {
+    label: "Nest",
+    svg: NestIcon,
+  },
   next: {
     label: "Next.js",
     svg: NextIcon,
@@ -148,6 +170,10 @@ export const icons = {
     label: "Pandas",
     svg: PandasIcon,
   },
+  postman: {
+    label: "Postman",
+    svg: PostmanIcon,
+  },
   python: {
     label: "Python",
     svg: PythonIcon,
@@ -167,6 +193,10 @@ export const icons = {
   spring: {
     label: "Spring Boot",
     svg: SpringIcon,
+  },
+  sql: {
+    label: "SQL",
+    svg: SqlIcon,
   },
   typescript: {
     label: "TypeScript",

@@ -1,13 +1,12 @@
-import CardContainer from "@/components/ui/CardContainer/CardContainer";
 import SkillCard from "./SkillCard/SkillCard";
 import { skills } from "./Skills.constants";
 
 const Skills = () => (
-  <CardContainer id="skills">
+  <div id="skills" className="flex scroll-mt-8 flex-col gap-10">
     {skills.map((skill) => (
       <SkillCard key={skill.id} title={skill.title} iconNames={skill.iconNames} />
     ))}
-  </CardContainer>
+  </div>
 );
 
 export default Skills;
