@@ -22,7 +22,7 @@ const companies = {
 export const experiences: TExperience[] = [
   {
     id: "kpm-fullstack-dev-2025-06",
-    title: "Full-Stack Developer",
+    title: "Software Engineer",
     company: companies.kpm,
     description:
       "Worked on software used directly on the production floor. Built a React-based assembly tree view that simplified component navigation and reduced manual effort. Developed a Node.js and Express API for live tracking across dozens of production kiosks, enabling immediate issue detection. Led development of a kiosk application using Electron, WebSockets, and Docker, centralizing session logic in an API to maintain reliability during kiosk failures.",

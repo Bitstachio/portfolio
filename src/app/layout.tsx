@@ -12,8 +12,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Barbod Habibi | Software Developer",
-  description: "Software developer portfolio website",
+  title: "Barbod Habibi | Software Engineer",
+  description: "Software engineer portfolio website",
 };
 
 const RootLayout = ({ children }: { children: ReactNode }) => (

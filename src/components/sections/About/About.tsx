@@ -26,10 +26,7 @@ const About = () => {
         delving deeper into distributed computing and cloud technologies.
       </p>
 
-      <p>
-        In my spare time, I&apos;m usually practicing tar (Persian classical instrument), playing chess, or watching
-        football.
-      </p>
+      <p>In my spare time, I&apos;m usually practicing tar (Persian classical instrument) or playing chess.</p>
     </article>
   );
 };
