@@ -1,5 +1,6 @@
 import { FC, SVGProps } from "react";
 import DownloadIcon from "./general/download.svg";
+import LanguageIcon from "./settings/language.svg";
 import GitHubIcon from "./social/github.svg";
 import GmailIcon from "./social/gmail.svg";
 import LinkedInIcon from "./social/linkedin.svg";
@@ -45,6 +46,11 @@ export const icons = {
   download: {
     label: "Download",
     svg: DownloadIcon,
+  },
+  // Settings
+  language: {
+    label: "Language",
+    svg: LanguageIcon,
   },
   // Social
   github: {

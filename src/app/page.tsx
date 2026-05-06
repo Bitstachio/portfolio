@@ -5,6 +5,7 @@ import Intro from "../components/sections/Intro/Intro";
 import Navbar from "@/components/sections/Navbar/Navbar";
 import About from "@/components/sections/About/About";
 import InitialFadeIn from "@/components/animations/InitialFadeIn";
+import Settings from "@/components/sections/Settings/Settings";
 
 export default function Home() {
   return (
@@ -19,7 +20,10 @@ export default function Home() {
             <Intro />
             <Navbar />
           </div>
-          <Connect />
+          <div className="flex justify-between">
+            <Connect />
+            <Settings />
+          </div>
         </InitialFadeIn>
         <InitialFadeIn as="main" delayMs={180} className="flex w-[52%] flex-col gap-24 py-24">
           <About />
