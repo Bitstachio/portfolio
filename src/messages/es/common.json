@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "title": "Barbod Habibi | Ingeniero de Software",
+    "description": "Sitio de portafolio de ingeniero de software"
+  },
+  "labels": {
+    "present": "Actualidad"
+  },
+  "actions": {
+    "resume": "Curriculum"
+  },
+  "aria": {
+    "projectImage": "Imagen de {name}"
+  }
+}

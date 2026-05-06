@@ -1,0 +1,24 @@
+{
+  "items": {
+    "kpm-fullstack-dev-2025-06": {
+      "title": "Ingeniero de Software",
+      "description": "Trabaje en software utilizado directamente en planta de produccion. Construi una vista de arbol de ensamblaje basada en React que simplifico la navegacion de componentes y redujo el esfuerzo manual. Desarrolle una API con Node.js y Express para seguimiento en vivo en decenas de kioscos de produccion, permitiendo detectar problemas de inmediato. Tambien lidere el desarrollo de una aplicacion de kiosco con Electron, WebSockets y Docker, centralizando la logica de sesion en una API para mantener la confiabilidad ante fallos."
+    },
+    "mccss-backend-dev-2024-06": {
+      "title": "Desarrollador Backend",
+      "description": "Desarrolle servicios backend para un sistema de salud utilizado por agencias de salud publica en Ontario. Implemente logica de negocio para crear y buscar historiales de pacientes con Java, Spring Boot y Oracle Database. Cree un servicio de reportes para rastrear cambios en historiales por fecha y ayude a contenerizar el sistema y configurar pipelines de CI/CD con Docker y Jenkins, reduciendo significativamente los tiempos de despliegue."
+    },
+    "mccss-qa-automation-2023-10": {
+      "title": "Desarrollador de Automatizacion QA",
+      "description": "Construi y mantuve un sistema de pruebas automatizadas para reemplazar pruebas de regresion manuales. Desarrolle una suite de pruebas con Java y Selenium que cubre todo el flujo de regresion, reduciendo el tiempo de pruebas en varios dias. Tambien cree una capa de acceso a datos con JDBC y procedimientos almacenados SQL para automatizar la generacion de datos de prueba, y automatice reportes de Excel con Apache POI."
+    },
+    "cmg-research-assistant-2024-06": {
+      "title": "Asistente de Investigacion",
+      "description": "Trabaje en un proyecto de investigacion enfocado en protocolos de consenso de blockchain. Desarrolle un simulador en Java que modela una red abstracta de Bitcoin y el mecanismo de proof-of-work. Refactorice bases de codigo existentes para mejorar estructura y mantenibilidad, integre builds con Maven, agregue pruebas unitarias con Mockito y PowerMock, e incorpore Lombok para reducir boilerplate."
+    },
+    "aimmlab-research-assistant-2023-06": {
+      "title": "Asistente de Investigacion",
+      "description": "Contribui a un proyecto de investigacion sobre modelado de enfermedades infecciosas. Construi un simulador en Python con NetworkX y NumPy para estudiar la propagacion de enfermedades en redes. Recopile y limpie datos de foros a gran escala, procesando millones de mensajes con BeautifulSoup y pandas para apoyar modelado de temas y analisis."
+    }
+  }
+}

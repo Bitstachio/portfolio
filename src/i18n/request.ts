@@ -6,6 +6,8 @@ import { routing } from "./routing";
 const messageLoaders = {
   en: () => import("@/messages/en"),
   fr: () => import("@/messages/fr"),
+  es: () => import("@/messages/es"),
+  de: () => import("@/messages/de"),
 } as const;
 
 export default getRequestConfig(async ({ requestLocale }) => {

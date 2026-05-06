@@ -34,6 +34,8 @@ import SpringIcon from "./tech/spring.svg";
 import TypeScriptIcon from "./tech/typescript.svg";
 import UnityIcon from "./tech/unity.svg";
 
+import GermanyIcon from "./countries/de.svg";
+import SpainIcon from "./countries/es.svg";
 import FranceIcon from "./countries/fr.svg";
 import BritainIcon from "./countries/gb.svg";
 
@@ -57,12 +59,20 @@ export const icons = {
   },
   // Languages
   en: {
-    label: "English",
+    label: "English (EN)",
     svg: BritainIcon,
   },
   fr: {
-    label: "French",
+    label: "French (FR)",
     svg: FranceIcon,
+  },
+  es: {
+    label: "Spanish (ES)",
+    svg: SpainIcon,
+  },
+  de: {
+    label: "German (DE)",
+    svg: GermanyIcon,
   },
   // Social
   github: {

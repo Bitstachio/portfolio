@@ -1,0 +1,24 @@
+{
+  "items": {
+    "kpm-fullstack-dev-2025-06": {
+      "title": "Softwareentwickler",
+      "description": "Ich arbeitete an Software, die direkt in der Produktion eingesetzt wurde. Ich entwickelte eine React-basierte Montagebaumansicht, die die Navigation zwischen Komponenten vereinfachte und manuellen Aufwand reduzierte. Ausserdem entwickelte ich eine Node.js- und Express-API fuer Live-Tracking ueber Dutzende Produktionskioske, wodurch Probleme sofort erkannt werden konnten. Zudem leitete ich die Entwicklung einer Kiosk-Anwendung mit Electron, WebSockets und Docker und zentralisierte Sitzungslogik in einer API, um die Zuverlaessigkeit bei Ausfaellen sicherzustellen."
+    },
+    "mccss-backend-dev-2024-06": {
+      "title": "Backend-Entwickler",
+      "description": "Ich entwickelte Backend-Services fuer ein Gesundheitssystem, das von oeffentlichen Gesundheitsbehoerden in ganz Ontario genutzt wird. Ich implementierte Geschaeftslogik zum Erstellen und Suchen von Patientendaten mit Java, Spring Boot und Oracle Database. Zusaetzlich entwickelte ich einen Reporting-Service zur Nachverfolgung von Aenderungen an Patientendaten nach Datum und half bei der Containerisierung sowie beim Aufbau von CI/CD-Pipelines mit Docker und Jenkins, was die Deploy-Zeit deutlich reduzierte."
+    },
+    "mccss-qa-automation-2023-10": {
+      "title": "QA-Automation-Entwickler",
+      "description": "Ich entwickelte und betreute ein automatisiertes Testsystem als Ersatz fuer manuelle Regressionstests. Ich erstellte eine Java- und Selenium-Test-Suite fuer den gesamten Regression-Workflow und reduzierte die Testdauer um mehrere Tage. Zudem baute ich eine Datenzugriffsschicht mit JDBC und SQL Stored Procedures zur automatisierten Testdatengenerierung und automatisierte Excel-Testberichte mit Apache POI."
+    },
+    "cmg-research-assistant-2024-06": {
+      "title": "Wissenschaftlicher Mitarbeiter",
+      "description": "Ich arbeitete an einem Forschungsprojekt zu Blockchain-Konsensprotokollen. Dabei entwickelte ich einen Java-basierten Simulator, der ein abstraktes Bitcoin-Netzwerk und den Proof-of-Work-Mechanismus modelliert. Ich refaktorisierte bestehende Codebasen fuer bessere Struktur und Wartbarkeit, integrierte Maven-Builds, fuegte Unit-Tests mit Mockito und PowerMock hinzu und setzte Lombok zur Reduzierung von Boilerplate-Code ein."
+    },
+    "aimmlab-research-assistant-2023-06": {
+      "title": "Wissenschaftlicher Mitarbeiter",
+      "description": "Ich wirkte an einem Forschungsprojekt zur Modellierung von Infektionskrankheiten mit. Ich entwickelte einen Python-basierten Simulator mit NetworkX und NumPy, um die Ausbreitung von Krankheiten in Netzwerken zu untersuchen. Ausserdem sammelte und bereinigte ich umfangreiche Forendaten und verarbeitete Millionen von Nachrichten mit BeautifulSoup und pandas zur Unterstuetzung von Topic Modeling und Analysen."
+    }
+  }
+}

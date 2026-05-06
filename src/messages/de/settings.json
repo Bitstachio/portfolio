@@ -1,0 +1,12 @@
+{
+  "language": {
+    "triggerAriaLabel": "Sprache wählen",
+    "listAriaLabel": "Sprachoptionen",
+    "options": {
+      "en": "Englisch",
+      "fr": "Französisch",
+      "de": "Deutsch",
+      "es": "Spanisch"
+    }
+  }
+}

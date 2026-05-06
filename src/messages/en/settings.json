@@ -4,7 +4,9 @@
     "listAriaLabel": "Language options",
     "options": {
       "en": "English",
-      "fr": "French"
+      "fr": "French",
+      "de": "German",
+      "es": "Spanish"
     }
   }
 }

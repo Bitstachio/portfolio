@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "title": "Barbod Habibi | Softwareentwickler",
+    "description": "Portfolio-Website eines Softwareentwicklers"
+  },
+  "labels": {
+    "present": "Heute"
+  },
+  "actions": {
+    "resume": "Lebenslauf"
+  },
+  "aria": {
+    "projectImage": "{name} Bild"
+  }
+}

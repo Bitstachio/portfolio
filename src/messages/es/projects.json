@@ -1,0 +1,20 @@
+{
+  "items": {
+    "deepseeker": {
+      "name": "DeepSeeker",
+      "description": "Colabore con un equipo de 5 personas para disenar, desarrollar y publicar un juego indie de exploracion submarina en itch.io."
+    },
+    "mad-grid": {
+      "name": "Mad Grid",
+      "description": "Desarrolle un juego multijugador de memoria de secuencias para Android y cree una API que implementa el protocolo STOMP para habilitar comunicacion bidireccional cliente-servidor en tiempo real y matchmaking."
+    },
+    "solve-me": {
+      "name": "Solve Me!",
+      "description": "Desarrolle y desplegue un visualizador interactivo de busqueda en grafos que muestra BFS, DFS y backtracking recursivo. Incluye generacion de reportes para comparar el rendimiento de algoritmos segun la longitud de las rutas de solucion."
+    },
+    "midi-chord-arpeggiator": {
+      "name": "Arpegiador de Acordes MIDI",
+      "description": "Un plugin MIDI con soporte para multiples tipos de acordes, patrones de arpegio y un modo combinado de acordes y arpegiador."
+    }
+  }
+}
