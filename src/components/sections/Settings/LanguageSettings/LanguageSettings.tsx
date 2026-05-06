@@ -5,6 +5,7 @@ import Icon from "@/components/ui/Icon/Icon";
 import { useState } from "react";
 import { languages } from "./LanguageSettings.constants";
 import { Language } from "./LanguageSettings.types";
+import { isLanguage } from "./LanguageSettings.utils";
 
 type LanguageSettingsProps = {};
 
@@ -16,7 +17,7 @@ const LanguageSettings = ({}: LanguageSettingsProps) => {
       options={languages}
       value={language}
       onChange={(value) => {
-        console.log(`New language selected: ${value}`);
+        if (!isLanguage(value)) return;
         setLanguage(value);
       }}
       trigger={
