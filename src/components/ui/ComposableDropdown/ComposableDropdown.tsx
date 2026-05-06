@@ -5,23 +5,27 @@ import { cn } from "@/utils/cn";
 import { ReactNode } from "react";
 import useComposableDropdown from "./useComposableDropdown";
 
-type ComposableDropdownProps = {
-  options: readonly Option[];
+type ComposableDropdownProps<TOption extends Option> = {
+  options: readonly TOption[];
   value: string;
   onChange: (value: string) => void;
   trigger: ReactNode;
   triggerAriaLabel: string;
+  renderLabel?: (option: TOption) => ReactNode;
   listAriaLabel: string;
 };
 
-const ComposableDropdown = ({
+const defaultRenderLabel = <TOption extends Option>(option: TOption) => option.label;
+
+const ComposableDropdown = <TOption extends Option>({
   options,
   value,
   onChange,
   trigger,
   triggerAriaLabel,
+  renderLabel = defaultRenderLabel,
   listAriaLabel,
-}: ComposableDropdownProps) => {
+}: ComposableDropdownProps<TOption>) => {
   const { open, setOpen, rootRef, selected } = useComposableDropdown(options, value);
 
   return (
@@ -60,7 +64,7 @@ const ComposableDropdown = ({
                     isSelected ? "bg-white/10 text-white" : "text-zinc-300 hover:bg-white/5",
                   )}
                 >
-                  {option.label}
+                  {renderLabel(option)}
                 </button>
               </li>
             );

@@ -41,6 +41,15 @@ const LanguageSettings = () => {
           className="fill-muted hover:fill-strong duration-standard h-5 w-5 cursor-pointer transition-[fill] sm:h-6 sm:w-6"
         />
       }
+      renderLabel={(option) => (
+        <div className="flex justify-between">
+          {option.label}
+          <Icon
+            name={option.value}
+            className="fill-muted hover:fill-strong duration-standard h-5 w-5 transition-[fill] sm:h-5 sm:w-5"
+          />
+        </div>
+      )}
     />
   );
 };

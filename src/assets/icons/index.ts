@@ -34,6 +34,9 @@ import SpringIcon from "./tech/spring.svg";
 import TypeScriptIcon from "./tech/typescript.svg";
 import UnityIcon from "./tech/unity.svg";
 
+import FranceIcon from "./countries/fr.svg";
+import BritainIcon from "./countries/gb.svg";
+
 type TIcon = {
   label: string;
   svg: FC<SVGProps<SVGElement>>;
@@ -51,6 +54,15 @@ export const icons = {
   language: {
     label: "Language",
     svg: LanguageIcon,
+  },
+  // Languages
+  en: {
+    label: "English",
+    svg: BritainIcon,
+  },
+  fr: {
+    label: "French",
+    svg: FranceIcon,
   },
   // Social
   github: {
