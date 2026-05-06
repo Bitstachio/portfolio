@@ -1,4 +1,3 @@
-import InitialFadeIn from "@/components/animations/InitialFadeIn";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ReactNode } from "react";
@@ -18,9 +17,7 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: { children: ReactNode }) => (
   <html lang="en" className="scroll-smooth">
-    <body className={`${inter.variable} antialiased`}>
-      <InitialFadeIn>{children}</InitialFadeIn>
-    </body>
+    <body className={`${inter.variable} antialiased`}>{children}</body>
   </html>
 );
 
