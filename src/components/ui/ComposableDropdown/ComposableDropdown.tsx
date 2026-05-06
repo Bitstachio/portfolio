@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 import useComposableDropdown from "./useComposableDropdown";
 
 type ComposableDropdownProps = {
-  options: Option[];
+  options: readonly Option[];
   value: string;
   onChange: (value: string) => void;
   trigger: ReactNode;

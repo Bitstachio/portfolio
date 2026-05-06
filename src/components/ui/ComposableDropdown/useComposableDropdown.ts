@@ -1,7 +1,7 @@
 import { Option } from "@/lib/types";
 import { useEffect, useRef, useState } from "react";
 
-const useComposableDropdown = (options: Option[], value: string) => {
+const useComposableDropdown = (options: readonly Option[], value: string) => {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
 
