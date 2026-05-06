@@ -2,23 +2,38 @@
 
 import ComposableDropdown from "@/components/ui/ComposableDropdown/ComposableDropdown";
 import Icon from "@/components/ui/Icon/Icon";
-import { useState } from "react";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { useLocale, useTranslations } from "next-intl";
 import { languages } from "./LanguageSettings.constants";
-import { Language } from "./LanguageSettings.types";
 import { isLanguage } from "./LanguageSettings.utils";
+import { useMemo } from "react";
 
-type LanguageSettingsProps = {};
+const LanguageSettings = () => {
+  const t = useTranslations("settings.language");
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
 
-const LanguageSettings = ({}: LanguageSettingsProps) => {
-  const [language, setLanguage] = useState<Language>("en");
+  const options = useMemo(
+    () =>
+      languages.map((option) => ({
+        ...option,
+        label: t(`options.${option.value}`),
+      })),
+    [t],
+  );
 
   return (
     <ComposableDropdown
-      options={languages}
-      value={language}
+      options={options}
+      value={locale}
+      triggerAriaLabel={t("triggerAriaLabel")}
+      listAriaLabel={t("listAriaLabel")}
       onChange={(value) => {
         if (!isLanguage(value)) return;
-        setLanguage(value);
+
+        const hash = typeof window !== "undefined" ? window.location.hash : "";
+        router.replace(`${pathname}${hash}`, { locale: value });
       }}
       trigger={
         <Icon

@@ -1,32 +1,34 @@
 import TextLink from "@/components/ui/TextLink/TextLink";
+import { useTranslations } from "next-intl";
 
 const About = () => {
   const yearsSinceStart = new Date().getFullYear() - 2019;
+  const t = useTranslations("about");
 
   return (
     <article id="about" className="flex flex-col gap-3">
       <p>
-        My interest in programming began in 2019 through an introductory robotics course in high school with{" "}
-        <TextLink href="https://www.robotc.net/">ROBOTC</TextLink> and{" "}
-        <TextLink href="https://en.wikipedia.org/wiki/Lego_Mindstorms_EV3">LEGO Mindstorms EV3</TextLink> bots. The
-        following summer, I picked up Mark Lee&apos;s book,{" "}
-        <TextLink
-          href="https://www.indigo.ca/en-ca/c-programming-for-the-absolute-beginner/9781598638752.html"
-          italicize={true}
-        >
-          C++ Programming for the Absolute Beginner
-        </TextLink>
-        , and started viewing software engineering as a potential career.
+        {t.rich("paragraph1", {
+          robotc: (chunks) => <TextLink href="https://www.robotc.net/">{chunks}</TextLink>,
+          lego: (chunks) => <TextLink href="https://en.wikipedia.org/wiki/Lego_Mindstorms_EV3">{chunks}</TextLink>,
+          bookTitle: (chunks) => (
+            <TextLink
+              href="https://www.indigo.ca/en-ca/c-programming-for-the-absolute-beginner/9781598638752.html"
+              italicize={true}
+            >
+              {chunks}
+            </TextLink>
+          ),
+        })}
       </p>
 
       <p>
-        Fast forward {yearsSinceStart} years, I&apos;m currently a fourth-year Computer Science student at York
-        University. I have had the privilege of gaining professional software development experience across startup,
-        public-sector, and research environments. My primary skill is full-stack web development, and I&apos;m currently
-        delving deeper into distributed computing and cloud technologies.
+        {t("paragraph2", {
+          yearsSinceStart,
+        })}
       </p>
 
-      <p>In my spare time, I&apos;m usually practicing tar (Persian classical instrument) or playing chess.</p>
+      <p>{t("paragraph3")}</p>
     </article>
   );
 };

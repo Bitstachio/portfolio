@@ -1,0 +1,10 @@
+{
+  "language": {
+    "triggerAriaLabel": "Choose language",
+    "listAriaLabel": "Language options",
+    "options": {
+      "en": "English",
+      "fr": "French"
+    }
+  }
+}

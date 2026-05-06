@@ -1,0 +1,20 @@
+{
+  "items": {
+    "deepseeker": {
+      "name": "DeepSeeker",
+      "description": "Collaboration avec une equipe de 5 personnes pour concevoir, developper et publier un jeu d'exploration sous-marine sur itch.io."
+    },
+    "mad-grid": {
+      "name": "Mad Grid",
+      "description": "Developpement d'un jeu multijoueur de memoire de sequences pour Android et creation d'une API implementant le protocole STOMP pour permettre une communication bidirectionnelle client-serveur en temps reel pour le matchmaking et le jeu."
+    },
+    "solve-me": {
+      "name": "Solve Me!",
+      "description": "Developpement et deploiement d'un visualiseur interactif de recherche de graphe mettant en avant BFS, DFS et le backtracking recursif. Inclut la generation de rapports comparant les performances des algorithmes selon la longueur des chemins de solution."
+    },
+    "midi-chord-arpeggiator": {
+      "name": "MIDI Chord Arpeggiator",
+      "description": "Plugin MIDI prenant en charge plusieurs types d'accords, differents motifs d'arpeggiation et un mode combine accord plus arpeggiateur."
+    }
+  }
+}

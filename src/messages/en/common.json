@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "title": "Barbod Habibi | Software Engineer",
+    "description": "Software engineer portfolio website"
+  },
+  "labels": {
+    "present": "Present"
+  },
+  "actions": {
+    "resume": "Resume"
+  },
+  "aria": {
+    "projectImage": "{name} image"
+  }
+}

@@ -1,6 +1,7 @@
+export type TNavItemId = "about" | "experience" | "projects";
+
 export type TNavItem = {
-  id: string;
-  label: string;
+  id: TNavItemId;
   href: string;
   external?: boolean;
 };

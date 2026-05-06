@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { cn } from "@/utils/cn";
 import { Inter } from "next/font/google";
 import { ReactNode } from "react";
@@ -10,11 +9,6 @@ const inter = Inter({
   variable: "--font-sans",
   display: "swap",
 });
-
-export const metadata: Metadata = {
-  title: "Barbod Habibi | Software Engineer",
-  description: "Software engineer portfolio website",
-};
 
 const RootLayout = ({ children }: { children: ReactNode }) => (
   <html lang="en" className="scroll-smooth">

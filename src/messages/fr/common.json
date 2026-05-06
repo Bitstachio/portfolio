@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "title": "Barbod Habibi | Ingenieur logiciel",
+    "description": "Site portfolio d'ingenieur logiciel"
+  },
+  "labels": {
+    "present": "Aujourd'hui"
+  },
+  "actions": {
+    "resume": "CV"
+  },
+  "aria": {
+    "projectImage": "Image de {name}"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "items": {
+    "kpm-fullstack-dev-2025-06": {
+      "title": "Ingenieur logiciel",
+      "description": "J'ai travaille sur des logiciels utilises directement sur le plancher de production. J'ai cree une vue d'arbre d'assemblage basee sur React qui a simplifie la navigation entre composants et reduit les efforts manuels. J'ai developpe une API Node.js et Express pour le suivi en temps reel sur des dizaines de kiosques de production, permettant de detecter les problemes immediatement. J'ai mene le developpement d'une application de kiosque avec Electron, WebSockets et Docker, en centralisant la logique de session dans une API pour garantir la fiabilite en cas de panne des kiosques."
+    },
+    "mccss-backend-dev-2024-06": {
+      "title": "Developpeur back-end",
+      "description": "J'ai developpe des services back-end pour un systeme de sante utilise par des agences de sante publique partout en Ontario. J'ai implemente la logique metier pour creer et rechercher des dossiers patients avec Java, Spring Boot et Oracle Database. J'ai construit un service de rapports pour suivre les changements de dossiers patients par date et j'ai participe a la conteneurisation du systeme ainsi qu'a la mise en place de pipelines CI/CD avec Docker et Jenkins, reduisant nettement le temps de deploiement."
+    },
+    "mccss-qa-automation-2023-10": {
+      "title": "Developpeur en automatisation QA",
+      "description": "J'ai concu et maintenu un systeme de tests automatises pour remplacer les regressions manuelles. J'ai developpe une suite de tests Java et Selenium couvrant tout le flux de regression, reduisant le temps de test de plusieurs jours. J'ai cree une couche d'acces aux donnees avec JDBC et des procedures stockees SQL pour automatiser la generation de donnees de test, et j'ai automatise les rapports Excel avec Apache POI."
+    },
+    "cmg-research-assistant-2024-06": {
+      "title": "Assistant de recherche",
+      "description": "J'ai travaille sur un projet de recherche axe sur les protocoles de consensus blockchain. J'ai developpe un simulateur Java modelisant un reseau Bitcoin abstrait et un mecanisme de preuve de travail. J'ai refactorise des bases de code existantes pour ameliorer la structure et la maintenabilite, integre des builds Maven, ajoute des tests unitaires avec Mockito et PowerMock, et introduit Lombok pour reduire le boilerplate."
+    },
+    "aimmlab-research-assistant-2023-06": {
+      "title": "Assistant de recherche",
+      "description": "J'ai contribue a un projet de recherche sur la modelisation des maladies infectieuses. J'ai construit un simulateur Python avec NetworkX et NumPy pour etudier la propagation des maladies dans des reseaux. J'ai collecte et nettoye des donnees de forums a grande echelle, en traitant des millions de messages avec BeautifulSoup et pandas pour soutenir la modelisation de sujets et l'analyse."
+    }
+  }
+}

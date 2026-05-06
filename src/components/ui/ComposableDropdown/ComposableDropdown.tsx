@@ -1,6 +1,7 @@
 "use client";
 
 import { Option } from "@/lib/types";
+import { cn } from "@/utils/cn";
 import { ReactNode } from "react";
 import useComposableDropdown from "./useComposableDropdown";
 
@@ -9,9 +10,18 @@ type ComposableDropdownProps = {
   value: string;
   onChange: (value: string) => void;
   trigger: ReactNode;
+  triggerAriaLabel: string;
+  listAriaLabel: string;
 };
 
-const ComposableDropdown = ({ options, value, onChange, trigger }: ComposableDropdownProps) => {
+const ComposableDropdown = ({
+  options,
+  value,
+  onChange,
+  trigger,
+  triggerAriaLabel,
+  listAriaLabel,
+}: ComposableDropdownProps) => {
   const { open, setOpen, rootRef, selected } = useComposableDropdown(options, value);
 
   return (
@@ -20,8 +30,9 @@ const ComposableDropdown = ({ options, value, onChange, trigger }: ComposableDro
         type="button"
         aria-haspopup="listbox"
         aria-expanded={open}
-        aria-label="Choose language"
+        aria-label={triggerAriaLabel}
         onClick={() => setOpen((prev) => !prev)}
+        onKeyDown={(event) => event.key === "Escape" && setOpen(false)}
         className="inline-flex items-center gap-2"
       >
         {trigger}
@@ -30,7 +41,7 @@ const ComposableDropdown = ({ options, value, onChange, trigger }: ComposableDro
       {open && (
         <ul
           role="listbox"
-          aria-label="Language options"
+          aria-label={listAriaLabel}
           className="absolute bottom-full left-0 mb-2 min-w-36 rounded-md border border-white/10 bg-zinc-900 p-1 shadow-lg"
         >
           {options.map((option) => {
@@ -44,9 +55,10 @@ const ComposableDropdown = ({ options, value, onChange, trigger }: ComposableDro
                     onChange(option.value);
                     setOpen(false);
                   }}
-                  className={`block w-full rounded px-3 py-2 text-left text-sm ${
-                    isSelected ? "bg-white/10 text-white" : "text-zinc-300 hover:bg-white/5"
-                  }`}
+                  className={cn(
+                    "block w-full rounded px-3 py-2 text-left text-sm",
+                    isSelected ? "bg-white/10 text-white" : "text-zinc-300 hover:bg-white/5",
+                  )}
                 >
                   {option.label}
                 </button>

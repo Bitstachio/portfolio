@@ -1,11 +1,14 @@
 "use client";
 import Icon from "@/components/ui/Icon/Icon";
 import { cn } from "@/utils/cn";
+import { useTranslations } from "next-intl";
 import { navItems, ROOT_SECTION_ID } from "./Navbar.constants";
 import { useActiveSection } from "./useActiveSection";
 
 const Navbar = () => {
   const activeId = useActiveSection(navItems.map((item) => item.href.replace("#", "")));
+  const t = useTranslations("navbar");
+  const commonT = useTranslations("common");
 
   // TODO: The current approach can potentially be improved
   // The main issue is that the styles in the active state duplicate the hover state
@@ -33,7 +36,7 @@ const Navbar = () => {
                     isActive ? "w-16 bg-gray-400" : "w-8 bg-gray-400/50 group-hover:w-16 group-hover:bg-gray-400",
                   )}
                 />
-                {item.label.toUpperCase()}
+                {t(`items.${item.id}`).toUpperCase()}
               </a>
             </li>
           );
@@ -45,7 +48,7 @@ const Navbar = () => {
           className="group text-muted hover:text-strong duration-standard mt-3 flex items-center gap-3 text-xs font-semibold transition-colors"
         >
           <Icon name="download" className="fill-muted group-hover:fill-accent duration-standard transition-all" />
-          RESUME
+          {commonT("actions.resume").toUpperCase()}
         </a>
       </ul>
     </nav>

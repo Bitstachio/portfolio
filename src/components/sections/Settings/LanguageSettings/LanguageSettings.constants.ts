@@ -1,7 +1,10 @@
-import { Option } from "@/lib/types";
+import { Locale, locales } from "@/i18n/config";
 
-export const languages = [
-  { value: "en", label: "English" },
-  { value: "fr", label: "French" },
-  { value: "de", label: "German" },
-] as const satisfies readonly Option[];
+export const languageValues = [...locales] as readonly Locale[];
+
+type LanguageOption = {
+  value: Locale;
+  label: string;
+};
+
+export const languages = languageValues.map((value) => ({ value, label: value })) as readonly LanguageOption[];

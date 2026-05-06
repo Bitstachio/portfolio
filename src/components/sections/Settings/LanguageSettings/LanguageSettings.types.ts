@@ -1,3 +1,3 @@
-import { languages } from "./LanguageSettings.constants";
+import { Locale } from "@/i18n/config";
 
-export type Language = (typeof languages)[number]["value"];
+export type Language = Locale;
