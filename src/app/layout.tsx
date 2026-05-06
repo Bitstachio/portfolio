@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { cn } from "@/utils/cn";
 import { Inter } from "next/font/google";
 import { ReactNode } from "react";
 import "./globals.css";
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: { children: ReactNode }) => (
   <html lang="en" className="scroll-smooth">
-    <body className={`${inter.variable} antialiased`}>{children}</body>
+    <body className={cn(inter.variable, "antialiased")}>{children}</body>
   </html>
 );
 

@@ -1,5 +1,6 @@
 "use client";
 import Icon from "@/components/ui/Icon/Icon";
+import { cn } from "@/utils/cn";
 import { navItems, ROOT_SECTION_ID } from "./Navbar.constants";
 import { useActiveSection } from "./useActiveSection";
 
@@ -21,10 +22,16 @@ const Navbar = () => {
             <li key={item.id}>
               <a
                 href={item.href === "#" + ROOT_SECTION_ID ? "#" : item.href}
-                className={`group flex items-center gap-3 p-1 py-3 text-xs font-semibold transition-all ${isActive ? "text-strong" : "text-muted hover:text-strong"}`}
+                className={cn(
+                  "group flex items-center gap-3 p-1 py-3 text-xs font-semibold transition-all",
+                  isActive ? "text-strong" : "text-muted hover:text-strong",
+                )}
               >
                 <span
-                  className={`duration-standard inline-block h-px ${isActive ? "w-16 bg-gray-400" : "w-8 bg-gray-400/50 group-hover:w-16 group-hover:bg-gray-400"}`}
+                  className={cn(
+                    "duration-standard inline-block h-px",
+                    isActive ? "w-16 bg-gray-400" : "w-8 bg-gray-400/50 group-hover:w-16 group-hover:bg-gray-400",
+                  )}
                 />
                 {item.label.toUpperCase()}
               </a>

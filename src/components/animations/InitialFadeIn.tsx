@@ -1,3 +1,4 @@
+import { cn } from "@/utils/cn";
 import type { ComponentPropsWithoutRef, ElementType, ReactNode } from "react";
 
 type InitialFadeInProps<T extends ElementType> = {
@@ -20,7 +21,7 @@ const InitialFadeIn = <T extends ElementType = "div">({
 
   return (
     <Component
-      className={["initial-fade-in", className].filter(Boolean).join(" ")}
+      className={cn("initial-fade-in", className)}
       style={{
         ...(delayMs != null ? ({ animationDelay: `${delayMs}ms` } as const) : null),
         ...(durationMs != null ? ({ animationDuration: `${durationMs}ms` } as const) : null),
