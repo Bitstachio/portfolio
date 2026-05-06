@@ -57,12 +57,12 @@ body {
   @apply text-strong hover:text-accent duration-standard font-semibold transition-colors;
 }
 
-/* Initial fade in animation */
+/* Initial Page Fade-In */
 
 .initial-fade-in {
   opacity: 0;
   transform: translateY(10px);
-  animation: initial-fade-in 1.5s ease-in-out forwards;
+  animation: initial-fade-in 400ms ease-in-out forwards;
 }
 
 @keyframes initial-fade-in {
