@@ -24,33 +24,39 @@ const LanguageSettings = () => {
   );
 
   return (
-    <ComposableDropdown
-      options={options}
-      value={locale}
-      triggerAriaLabel={t("triggerAriaLabel")}
-      listAriaLabel={t("listAriaLabel")}
-      onChange={(value) => {
-        if (!isLanguage(value)) return;
+    <div className="relative">
+      <ComposableDropdown
+        options={options}
+        value={locale}
+        triggerAriaLabel={t("triggerAriaLabel")}
+        listAriaLabel={t("listAriaLabel")}
+        onChange={(value) => {
+          if (!isLanguage(value)) return;
 
-        const hash = typeof window !== "undefined" ? window.location.hash : "";
-        router.replace(`${pathname}${hash}`, { locale: value });
-      }}
-      trigger={
-        <Icon
-          name="language"
-          className="fill-muted hover:fill-strong duration-standard h-5 w-5 cursor-pointer transition-[fill] sm:h-6 sm:w-6"
-        />
-      }
-      renderLabel={(option) => (
-        <div className="flex justify-between">
-          {option.label}
+          const hash = typeof window !== "undefined" ? window.location.hash : "";
+          router.replace(`${pathname}${hash}`, { locale: value });
+        }}
+        trigger={
           <Icon
-            name={option.value}
-            className="fill-muted hover:fill-strong duration-standard h-5 w-5 transition-[fill] sm:h-5 sm:w-5"
+            name="language"
+            className="fill-muted hover:fill-strong duration-standard h-5 w-5 cursor-pointer transition-[fill] sm:h-6 sm:w-6"
           />
-        </div>
-      )}
-    />
+        }
+        renderLabel={(option) => (
+          <div className="flex justify-between">
+            {option.label}
+            <Icon
+              name={option.value}
+              className="fill-muted hover:fill-strong duration-standard h-5 w-5 transition-[fill] sm:h-5 sm:w-5"
+            />
+          </div>
+        )}
+      />
+      <Icon
+        name={locale}
+        className="fill-muted duration-standard pointer-events-none absolute -top-0.5 -right-0.5 h-2 w-2 transition-[fill] sm:h-3 sm:w-3"
+      />
+    </div>
   );
 };
 
