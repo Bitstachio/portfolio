@@ -2,25 +2,17 @@
 
 import ComposableDropdown from "@/components/ui/ComposableDropdown/ComposableDropdown";
 import Icon from "@/components/ui/Icon/Icon";
-import { isLocale, locales } from "@/i18n/config";
+import { isLocale } from "@/i18n/config";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { useMemo } from "react";
+import { useLanguageSettings } from "./useLanguageSettings";
 
 const LanguageSettings = () => {
   const t = useTranslations("settings.language");
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
-
-  const options = useMemo(
-    () =>
-      locales.map((locale) => ({
-        value: locale,
-        label: t(`options.${locale}`),
-      })),
-    [t],
-  );
+  const { options } = useLanguageSettings(t);
 
   return (
     <div className="relative">
