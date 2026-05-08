@@ -2,10 +2,9 @@
 
 import ComposableDropdown from "@/components/ui/ComposableDropdown/ComposableDropdown";
 import Icon from "@/components/ui/Icon/Icon";
+import { isLocale, locales } from "@/i18n/config";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { languages } from "./LanguageSettings.constants";
-import { isLanguage } from "./LanguageSettings.utils";
 import { useMemo } from "react";
 
 const LanguageSettings = () => {
@@ -16,9 +15,9 @@ const LanguageSettings = () => {
 
   const options = useMemo(
     () =>
-      languages.map((option) => ({
-        ...option,
-        label: t(`options.${option.value}`),
+      locales.map((locale) => ({
+        value: locale,
+        label: t(`options.${locale}`),
       })),
     [t],
   );
@@ -31,7 +30,7 @@ const LanguageSettings = () => {
         triggerAriaLabel={t("triggerAriaLabel")}
         listAriaLabel={t("listAriaLabel")}
         onChange={(value) => {
-          if (!isLanguage(value)) return;
+          if (!isLocale(value)) return;
 
           const hash = typeof window !== "undefined" ? window.location.hash : "";
           router.replace(`${pathname}${hash}`, { locale: value });
