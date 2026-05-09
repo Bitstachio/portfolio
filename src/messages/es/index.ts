@@ -2,6 +2,7 @@ import about from "./about.json";
 import common from "./common.json";
 import connect from "./connect.json";
 import experience from "./experience.json";
+import footer from "./footer.json";
 import intro from "./intro.json";
 import navbar from "./navbar.json";
 import projects from "./projects.json";
@@ -12,6 +13,7 @@ const messages = {
   common,
   connect,
   experience,
+  footer,
   intro,
   navbar,
   projects,

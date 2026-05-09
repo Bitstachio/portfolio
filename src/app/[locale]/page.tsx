@@ -2,14 +2,15 @@ import InitialFadeIn from "@/components/animations/InitialFadeIn";
 import About from "@/components/sections/About/About";
 import Connect from "@/components/sections/Connect/Connect";
 import Experience from "@/components/sections/Experience/Experience";
+import Footer from "@/components/sections/Footer/Footer";
 import Intro from "@/components/sections/Intro/Intro";
 import Navbar from "@/components/sections/Navbar/Navbar";
 import Projects from "@/components/sections/Projects/Projects";
 import Settings from "@/components/sections/Settings/Settings";
+import { routing } from "@/i18n/routing";
 import { hasLocale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
 
 type HomePageProps = {
   params: Promise<{ locale: string }>;
@@ -42,6 +43,7 @@ const HomePage = async ({ params }: HomePageProps) => {
           <About />
           <Experience />
           <Projects />
+          <Footer />
         </InitialFadeIn>
       </div>
     </div>
